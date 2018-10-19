@@ -1,0 +1,2 @@
+dump /;
+Hyperspace CRITICAL - HYPERSPACE client/server protocol version mismatch (Hyperspace 'open' error, name=/ flags=0x1 events=0x0)

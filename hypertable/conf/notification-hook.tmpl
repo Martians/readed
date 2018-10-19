@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+# This file is an example notification script.  To activate it, modify the
+# recipient variable below and then rename it to "notification-hook.sh"
+# and set the executable bit:
+#
+#   mv notification-hook.tmpl notification-hook.sh
+#   chmod +x notification-hook.sh
+#
+
+recipient="root"
+
+###############################################################################
+
+subject=$1
+message=$2
+
+# send the mail
+echo -e $message | mail -s "$subject" ${recipient}

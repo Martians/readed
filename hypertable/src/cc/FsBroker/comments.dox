@@ -1,0 +1,4 @@
+/** @defgroup FsBroker FsBroker
+ * File system broker.
+ * The %FsBroker module contains file system brokers for varioues file systems.
+ */

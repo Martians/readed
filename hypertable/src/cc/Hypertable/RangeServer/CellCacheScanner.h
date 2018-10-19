@@ -1,0 +1,75 @@
+/* -*- c++ -*-
+ * Copyright (C) 2007-2015 Hypertable, Inc.
+ *
+ * This file is part of Hypertable.
+ *
+ * Hypertable is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; version 3 of the
+ * License, or any later version.
+ *
+ * Hypertable is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301, USA.
+ */
+
+#ifndef Hypertable_RangeServer_CellCacheScanner_h
+#define Hypertable_RangeServer_CellCacheScanner_h
+
+#include "CellCache.h"
+#include "CellListScanner.h"
+#include "ScanContext.h"
+
+namespace Hypertable {
+
+  /**
+   * Provides a scanning interface to a CellCache.
+   */
+  class CellCacheScanner : public CellListScanner {
+  public:
+    CellCacheScanner(CellCachePtr cellcache, ScanContext *scan_ctx);
+    virtual ~CellCacheScanner() { return; }
+    virtual void forward();
+    virtual bool get(Key &key, ByteString &value);
+
+    virtual int64_t get_disk_read() { return 0; }
+
+    typedef std::map<const SerializedKey, uint32_t> CellCacheMap;
+
+  private:
+
+    bool internal_get();
+    void internal_forward();
+    void load_entry_cache();
+
+    class CellCacheEntry {
+    public:
+      CellCacheEntry() : value(0) { };
+      Key         key;
+      ByteString  value;
+    };
+
+    CellCache::CellMap::iterator   m_start_iter;
+    CellCache::CellMap::iterator   m_end_iter;
+    CellCache::CellMap::iterator   m_cur_iter;
+    CellCacheMap::iterator         m_delete_iter;
+    CellCachePtr                   m_cell_cache_ptr;
+    std::mutex                    &m_cell_cache_mutex;
+    CellCacheEntry                 m_cur_entry;
+    std::vector<CellCacheEntry>    m_entry_cache;
+    size_t                         m_entry_cache_next {};
+    CellCacheMap                   m_deletes;
+    bool                           m_in_deletes {};
+    bool                           m_eos {};
+    bool                           m_keys_only {};
+  };
+}
+
+#endif // Hypertable_RangeServer_CellCacheScanner_h
+

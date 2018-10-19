@@ -1,0 +1,12 @@
+USE '/test';
+DROP TABLE IF EXISTS hypertable;
+CREATE TABLE hypertable(TestColumnFamily);
+LOAD DATA INFILE ROW_KEY_COLUMN=rowkey "-" INTO TABLE hypertable;
+USE 'test';
+SELECT * FROM hypertable;
+key1	TestColumnFamily	tcf1
+key2	TestColumnFamily	tcf2
+DROP TABLE IF EXISTS hypertable;
+#row	column	value
+key1	TestColumnFamily	tcf1
+key2	TestColumnFamily	tcf2

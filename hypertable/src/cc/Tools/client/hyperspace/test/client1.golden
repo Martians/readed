@@ -1,0 +1,116 @@
+echo;
+
+echo << BasicTest >>;
+<< BasicTest >>
+mkdir dir1;
+mkdir how/now/brown/cow;
+Hyperspace CRITICAL - HYPERSPACE file not found (Hyperspace 'mkdir' error, name=/how/now/brown/cow)
+delete foo;
+Hyperspace CRITICAL - HYPERSPACE file not found (Hyperspace 'unlink' error, name=/foo)
+open foo flags=READ;
+Hyperspace CRITICAL - HYPERSPACE file not found (Hyperspace 'open' error, name=/foo flags=0x1 events=0x0)
+open foo flags=READ|CREATE;
+open foo flags=READ|CREATE|EXCL;
+Hyperspace CRITICAL - HYPERSPACE file exists (Hyperspace 'open' error, name=/foo flags=0x19 events=0x0)
+lock foo EXCLUSIVE;
+Hyperspace CRITICAL - HYPERSPACE mode restriction (Hyperspace 'lock' error, name='/foo')
+exists dir1;
+true
+exists foo;
+true
+exists bar;
+false
+attrget foo testattr;
+Hyperspace CRITICAL - HYPERSPACE attribute not found (Problem getting attribute 'testattr' of hyperspace file '/foo')
+open / flags=READ ;
+readdir /;
+(dir) dir1
+      foo
+(dir) hyperspace
+close /;
+delete dir1;
+close foo;
+attrset foo testattr="Hello, World!";
+attrget foo testattr;
+Hello, World!
+attrdel foo testattr;
+Hyperspace CRITICAL - HYPERSPACE CLI parse error (Unable to find '/foo' in open file map)
+attrlist foo;
+Hyperspace CRITICAL - HYPERSPACE CLI parse error (Unable to find '/foo' in open file map)
+delete foo;
+create foo flags=READ|WRITE attr:msg1="Hello, World!" attr:msg2="How now brown cow";
+mkdir /bar2/;
+open /bar2 flags=READ|WRITE ;
+attrset /bar2 msg1="Hello, Bar!";
+attrset /bar2 msg2="How now brown cow";
+attrset /bar2 counter="10";
+attrincr /bar2 counter;
+10
+attrincr /bar2 counter;
+11
+attrdel /bar2 counter;
+attrset /bar2 msg1="Hello, Bar2/!";
+create /bar2/foo flags=READ|WRITE attr:msg1="Hello, Bar/Foo!";
+create bar3 flags=READ|WRITE attr:msg2="Hello, Bar/Foo!";
+close foo;
+delete foo;
+close /bar2;
+close /bar2/foo;
+delete /bar2/foo;
+close bar3;
+delete bar3;
+delete bar2;
+echo;
+
+echo << NotificationTest >>;
+<< NotificationTest >>
+mkdir dir1;
+open dir1 flags=READ|CREATE|WRITE event-mask=ATTR_SET|ATTR_DEL|CHILD_NODE_ADDED|CHILD_NODE_REMOVED|LOCK_ACQUIRED|LOCK_RELEASED;
+CHILD NODE ADDED foo
+CHILD NODE REMOVED foo
+ATTR SET fox
+ATTR DEL fox
+LOCK ACQUIRED exclusive
+LOCK RELEASED
+close dir1;
+echo;
+
+echo << LockTest >>;
+<< LockTest >>
+open lockfile flags=READ|CREATE|WRITE event-mask=ATTR_SET|ATTR_DEL|CHILD_NODE_ADDED|CHILD_NODE_REMOVED|LOCK_ACQUIRED|LOCK_RELEASED;
+LOCK ACQUIRED exclusive
+LOCK RELEASED
+LOCK ACQUIRED exclusive
+LOCK RELEASED
+LOCK ACQUIRED shared
+LOCK RELEASED
+LOCK ACQUIRED exclusive
+LOCK RELEASED
+LOCK ACQUIRED exclusive
+LOCK RELEASED
+LOCK ACQUIRED shared
+LOCK RELEASED
+close lockfile;
+delete lockfile;
+echo;
+
+echo << EphemeralFileTest >>;
+<< EphemeralFileTest >>
+mkdir dir1;
+open dir1 flags=READ|CREATE|WRITE event-mask=ATTR_SET|ATTR_DEL|CHILD_NODE_ADDED|CHILD_NODE_REMOVED|LOCK_ACQUIRED|LOCK_RELEASED;
+CHILD NODE ADDED foo
+CHILD NODE REMOVED foo
+close dir1;
+delete dir1;
+echo;
+
+echo << SessionExpirationTest >>;
+<< SessionExpirationTest >>
+mkdir dir1;
+open dir1 flags=READ|CREATE|WRITE event-mask=ATTR_SET|ATTR_DEL|CHILD_NODE_ADDED|CHILD_NODE_REMOVED|LOCK_ACQUIRED|LOCK_RELEASED;
+CHILD NODE ADDED foo
+LOCK ACQUIRED exclusive
+CHILD NODE REMOVED foo
+LOCK RELEASED
+close dir1;
+delete dir1;

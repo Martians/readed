@@ -1,0 +1,516 @@
+
+INSTALL_DIR=${INSTALL_PREFIX}/${HYPERTABLE_VERSION}
+if [[ ${ORIGIN_CONFIG_FILE} != */hypertable.cfg ]]; then
+  CONFIG="--config ${INSTALL_DIR}/${HYPERTABLE_VERSION}/conf/`basename ${ORIGIN_CONFIG_FILE}`"
+fi
+
+if [ -n "${ROLE_thriftbroker}" ]; then
+  ROLE_thriftbroker="(${ROLE_thriftbroker}) - ((${ROLE_master}) + (${ROLE_slave}))"
+fi
+
+RSYNC="rsync -av -e 'ssh -o StrictHostKeyChecking=no'"
+THRIFTBROKER_ARGS=
+
+# Install origin configuration file.
+# This task copies the origin config file \$ORIGIN_CONFIG_FILE
+# (${ORIGIN_CONFIG_FILE}) into the conf/ directory of the Hypertable
+# \$HYPERTABLE_VERSION (${HYPERTABLE_VERSION}) installation.
+task: install_origin_config roles: source {
+  ssh: {
+    ${RSYNC} ${ORIGIN_CONFIG_FILE} ${INSTALL_DIR}/conf
+  }
+}
+
+
+# Set Hadoop distro.
+# This task copies the contents of the \$HADOOP_DISTRO variable
+# (${HADOOP_DISTRO}) into the conf/hadoop-distro file of the Hypertable
+# \$HYPERTABLE_VERSION (${HYPERTABLE_VERSION}) installation.
+task: set_hadoop_distro roles: source {
+  ssh: {
+    echo ${HADOOP_DISTRO} > ${INSTALL_DIR}/conf/hadoop-distro
+  }
+}
+
+
+# Rsync config dir from source machine to all.
+# This task rsync's the configuration directory (conf/) from the source machine
+# (${ROLE_source}) to all nodes in the cluster.  It does this by ssh'ing into
+# all nodes in parallel and pulling the configuration directory from the source
+# node.
+task: rsync_config_dir {
+  ssh: {
+    ${RSYNC} ${ROLE_source}:${INSTALL_DIR}/conf/ ${INSTALL_DIR}/conf
+  }
+}
+
+
+# Rsync installation dir from source machine to all.
+# This task rsync's the installation directory (excluding log, run, fs, and
+# hyperspace) from the source machine (${ROLE_source}) to all nodes in the
+# cluster.  It does this by ssh'ing into all nodes in parallel and pulling the
+# installation from the source node.
+task: rsync_installation {
+  ssh: {
+    ${RSYNC} --exclude=log --exclude=run --exclude=demo --exclude=fs --exclude=conf --exclude=hyperspace ${ROLE_source}:${INSTALL_DIR} ${INSTALL_PREFIX}
+  }
+  rsync_config_dir
+}
+
+
+# Distribute installation.  This task writes the value of the variable
+# \$HADOOP_DISTRO (${HADOOP_DISTRO}) into the conf/hadoop-distro file of the
+# Hypertable \$HYPERTABLE_VERSION (${HYPERTABLE_VERSION}) installation and then
+# runs the rsync_installation task.
+task: dist roles: source {
+  if [ ! -f ${INSTALL_DIR}/conf/hadoop-distro ] || [ "`cat ${INSTALL_DIR}/conf/hadoop-distro`" != "${HADOOP_DISTRO}" ]; then
+    ssh: {
+      echo ${HADOOP_DISTRO} > ${INSTALL_DIR}/conf/hadoop-distro
+    }
+  fi
+  rsync_installation
+}
+
+
+# Push config file out to all machines.
+# This task copies the config file into the conf/ directory of the hypertable
+# installation on the source machine (${ROLE_source}) by running task
+# install_origin_config and then rsyncs it out to all of the machines in the cluster by
+# running the rsync_config_dir task.
+task: push_config {
+  install_origin_config
+  rsync_config_dir
+}
+
+
+# Stop ThriftBroker on primary servers.
+# Stops the ThriftBroker from the current installation.
+task: stop_thriftbrokers_primary roles: master, slave {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-stop-thriftbroker.sh ${CONFIG}
+  }
+}
+
+
+# Stop ThriftBroker on ThriftBroker-only servers.
+# Stops the FSBroker and ThriftBroker from the current installation.
+task: stop_thriftbrokers_only roles: thriftbroker {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-stop-thriftbroker.sh ${CONFIG} || exit \$?
+    ${INSTALL_PREFIX}/current/bin/ht-stop-fsbroker.sh ${CONFIG} || exit \$?
+  }
+}
+
+
+# Stop ThriftBrokers.
+# Stops ThriftBrokers by running stop_thriftbrokers_primary and
+# stop_thriftbrokers_only tasks.
+task: stop_thriftbrokers {
+  stop_thriftbrokers_primary
+  stop_thriftbrokers_only
+}
+
+
+# Stop FS brokers.
+# Stops FSBrokers in the current installation.
+task: stop_fsbrokers roles: master, slave {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-stop-fsbroker.sh ${CONFIG} || exit \$?
+  }
+}
+
+
+# Stop slaves.
+# Stops RangeServers in the current installation.
+task: stop_slaves roles: slave {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-stop-rangeserver.sh ${CONFIG}
+  }
+}
+
+
+# Stop masters.
+# Stops Masters and monitoring servers in the current installation.
+task: stop_masters roles: master {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-stop-master.sh ${CONFIG}
+    ${INSTALL_PREFIX}/current/bin/ht-stop-monitoring.sh
+  }
+}
+
+
+# Stop monitoring servers.
+# Stops monitoring servers in the current installation.
+task: stop_monitoring roles: master {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-stop-monitoring.sh
+  }
+}
+
+
+# Stop Hyperspace.
+# Stops Hyperspace in the current installation.
+task: stop_hyperspace roles: hyperspace {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-stop-hyperspace.sh ${CONFIG} || echo $?
+  }
+}
+
+
+# Stop primary database processes.
+# Stops slave, master, and hyperspace processes by running the stop_masters,
+# stop_slaves, stop_hyperspace, and stop_fsbrokers tasks.
+task: stop_database roles: master, slave, hyperspace {
+  stop_masters
+  stop_slaves
+  stop_hyperspace
+  stop_fsbrokers
+}
+
+
+# Stop all Hypertable processes.
+# Stops all Hypertable processes by running the stop_thriftbrokers and
+# stop_database tasks.
+task: stop {
+  stop_thriftbrokers
+  stop_database
+}
+
+
+# Kill all Hypertable processes.
+# Kills all Hypertable processes by greping for them in \`ps auxww\` output and
+# sending them the -9 signal.
+task: kill {
+  ssh: {
+    PIDS1=\`ps auxww | fgrep "/opt/hypertable" | fgrep "/bin/" | fgrep -v "/bin/ht_cluster" | fgrep -v "/.cluster/" | fgrep -v java | fgrep -v grep | tr -s "[ ]" | cut -f2 -d' '\`
+    PIDS2=\`ps auxww | fgrep "org.hypertable.FsBroker.hadoop.main" | fgrep -v grep | tr -s "[ ]" | cut -f2 -d' '\`
+    if [ -n "\$PIDS1" ] || [ -n "\$PIDS2" ]; then
+      COUNT=\`echo "\$PIDS1 \$PIDS2" | wc -w\`
+      echo "Sending SIGKILL to \$COUNT processes ..."
+      kill -9 \`echo "\$PIDS1 \$PIDS2"\`
+    fi
+  }
+}
+
+
+# Destroy master state.
+# Destroys the master state by starting the FS broker and then running the
+# ht-destroy-database.sh and ht-stop-monitoring.sh scripts from the current
+# installation.
+task: destroy_masters roles: master {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-start-fsbroker.sh ${FS} ${CONFIG} || exit \$?
+    ${INSTALL_PREFIX}/current/bin/ht-destroy-database.sh ${CONFIG} || exit \$?
+    ${INSTALL_PREFIX}/current/bin/ht-stop-monitoring.sh || exit \$?
+  }
+}
+
+
+# Destroy Hyperspace state.  Runs the ht-destroy-hyperspace.sh script from the
+# current installation.
+task: destroy_hyperspace roles: hyperspace {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-destroy-hyperspace.sh
+  }
+}
+
+
+# Destroy slave state.  Removes the contents of the run/ directory in the current
+# installation.
+task: destroy_slaves roles: slave {
+  ssh: {
+    rm -rf ${INSTALL_PREFIX}/current/run/*
+  }
+}
+
+
+# Destroy database removing all tables.  If the variable \$PROMPT_DESTROY is equal
+# to \"true\", this task will first prompt the user for confirmation.  If the
+# confirmation is obtained or \$PROMPT_DESTROY is equal to \"false\", then the task
+# will wipe the database destroy by calling the following tasks:  stop, kill,
+# destroy_masters, destroy_hyperspace, destroy_slaves
+task: destroy {
+  if [ "${PROMPT_DESTROY}" == "true" ]; then
+    echo "This will DELETE ALL DATA stored in Hypertable. ARE YOU SURE you want to proceed?"
+    echo -n "('Yes' to proceed)> "
+    read RESPONSE EXTRA
+    if [ "$RESPONSE" != "Yes" ]; then
+      exit 0
+    fi
+  fi
+  stop
+  kill
+  destroy_masters
+  destroy_hyperspace
+  destroy_slaves
+}
+
+
+# Start monitoring server.  Starts the monitoring server by running the
+# ht-start-monitoring.sh script from the current installation.
+task: start_monitoring roles: master {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-start-monitoring.sh
+  }
+}
+
+
+# Start hyperspace.  Starts hyperspace by running the ht-start-hyperspace.sh script
+# from the current installation.
+task: start_hyperspace roles: hyperspace {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-start-hyperspace.sh ${CONFIG} || exit \$?
+  }
+}
+
+
+# Start master processes.  Starts master processes FS broker, master, and
+# monitoring server from the current installation.
+task: start_masters roles: master {
+  ssh: {
+    ${INSTALL_PREFIX}/current/bin/ht-start-fsbroker.sh ${FS} ${CONFIG} || exit \$?
+    ${INSTALL_PREFIX}/current/bin/ht-start-master.sh ${CONFIG} || exit \$?
+    ${INSTALL_PREFIX}/current/bin/ht-start-monitoring.sh || exit \$?
+  }
+}
+
+
+# Start slave processes.  Starts slave processes by starting the FS broker and
+# RangeServers from the current installation.  The processes are started with a
+# random start delay of 5000 milliseconds.
+task: start_slaves roles: slave {
+  ssh: random-start-delay=5000 {
+    ${INSTALL_PREFIX}/current/bin/ht-start-fsbroker.sh ${FS} ${CONFIG} || exit \$?
+    ${INSTALL_PREFIX}/current/bin/ht-start-rangeserver.sh ${CONFIG} || exit \$?
+  }
+}
+
+
+# Start ThriftBrokers on primary servers.
+task: start_thriftbrokers_primary roles: master, slave {
+  ssh: random-start-delay=5000 {
+    ${INSTALL_PREFIX}/current/bin/ht-start-thriftbroker.sh ${CONFIG} ${THRIFTBROKER_ARGS}
+  }
+}
+
+
+# Start ThriftBrokers on ThriftBroker-only servers.
+task: start_thriftbrokers_only roles: thriftbroker {
+  ssh: random-start-delay=5000 {
+    ${INSTALL_PREFIX}/current/bin/ht-start-fsbroker.sh ${FS} ${CONFIG} || exit \$?
+    ${INSTALL_PREFIX}/current/bin/ht-start-thriftbroker.sh ${CONFIG} ${THRIFTBROKER_ARGS} || exit \$?
+  }
+}
+
+
+# Start ThriftBrokers.  Starts
+task: start_thriftbrokers {
+  start_thriftbrokers_primary
+  start_thriftbrokers_only
+#  if [ -n "${ROLE_thriftbroker}" ]; then
+#    start_thriftbrokers_only
+#  fi
+}
+
+
+# Start primary Hypertable processes.  Starts primary Hypertable processes by
+# running tasks start_hyperspace, start_masters, and start_slaves.
+task: start_database {
+  start_hyperspace
+  start_masters
+  start_slaves
+}
+
+
+# Start all Hypertable processes.  Starts all Hypertable processes by running
+# tasks start_database and start_thriftboker.
+task: start {
+  start_database
+  start_thriftbrokers
+}
+
+
+# Set the symbolic link 'current' to point to \$HYPERTABLE_VERSION.
+# Sets the symbolic link 'current' in directory $\INSTALL_PREFIX
+# (${INSTALL_PREFIX}) to point to \$HYPERTABLE_VERSION (${HYPERTABLE_VERSION})
+task: set_current roles: master, hyperspace, slave, thriftbroker, spare {
+  ssh: {
+    cd ${INSTALL_PREFIX}
+    rm -f current
+    ln -s ${HYPERTABLE_VERSION} current
+  }
+}
+
+declare -a VALID_EXTENSIONS=('tar.bz2' 'deb' 'rpm' 'tar.gz')
+
+# Install package on all machines.
+# Installs package \$PACKAGE_FILE (${PACKAGE_FILE}) on all machines in the
+# cluster.
+task: install_package roles: master, hyperspace, slave, thriftbroker, spare {
+  local ext
+  for valid_ext in "${VALID_EXTENSIONS[@]}"; do
+    if [[ ${PACKAGE_FILE} == *.${valid_ext} ]]; then
+      ext=${valid_ext}
+    fi
+  done
+  if [ -z "${ext}" ]; then
+    echo "Package file ${PACKAGE_FILE} is of unsupported type."
+    echo "Expected one of: ${VALID_EXTENSIONS[*]}"
+    exit 1
+  fi
+  if [[ ${PACKAGE_FILE} != *${HYPERTABLE_VERSION}* ]]; then
+    echo "Package file ${PACKAGE_FILE} doesn't match version ${HYPERTABLE_VERSION}"
+    exit 1
+  fi
+
+  ssh: {
+    ${RSYNC} ${ROLE_source}:${PACKAGE_FILE} ${INSTALL_PREFIX}
+  }
+
+  local PACKAGE_BASENAME=$(basename "$PACKAGE_FILE")
+  local DIR_BASENAME=${PACKAGE_BASENAME%.$ext}
+
+  if [ $ext == "deb" ]; then
+    ssh: {
+      dpkg -i ${INSTALL_PREFIX}/${PACKAGE_FILE##*/}
+      rm ${INSTALL_PREFIX}/${PACKAGE_FILE##*/} ${INSTALL_PREFIX}/${PACKAGE_BASENAME}
+      echo ${HADOOP_DISTRO} > ${INSTALL_PREFIX}/${HYPERTABLE_VERSION}/conf/hadoop-distro
+    }
+  elif [ $ext == "rpm" ]; then
+    ssh: {
+      rpm -ivh --replacepkgs --nomd5 --nodeps --oldpackage ${INSTALL_PREFIX}/${PACKAGE_FILE##*/}
+      rm ${INSTALL_PREFIX}/${PACKAGE_FILE##*/} ${INSTALL_PREFIX}/${PACKAGE_BASENAME}
+      echo ${HADOOP_DISTRO} > ${INSTALL_PREFIX}/${HYPERTABLE_VERSION}/conf/hadoop-distro
+    }
+  elif [ $ext == "tar.bz2" ]; then
+    ssh: {
+      tar xjv -f ${INSTALL_PREFIX}/${PACKAGE_BASENAME} -C ${INSTALL_PREFIX}
+      mv ${INSTALL_PREFIX}/${DIR_BASENAME}/opt/hypertable/${HYPERTABLE_VERSION} ${INSTALL_PREFIX}
+      /bin/rm -rf ${INSTALL_PREFIX}/${DIR_BASENAME} ${INSTALL_PREFIX}/${PACKAGE_BASENAME}
+      echo ${HADOOP_DISTRO} > ${INSTALL_PREFIX}/${HYPERTABLE_VERSION}/conf/hadoop-distro
+    }
+  elif [ $ext == "tar.gz" ]; then
+    ssh: {
+      tar xzv -f ${INSTALL_PREFIX}/${PACKAGE_BASENAME} -C ${INSTALL_PREFIX}
+      mv ${INSTALL_PREFIX}/${DIR_BASENAME}/opt/hypertable/${HYPERTABLE_VERSION} ${INSTALL_PREFIX}
+      /bin/rm -rf ${INSTALL_PREFIX}/${DIR_BASENAME} ${INSTALL_PREFIX}/${PACKAGE_BASENAME}
+      echo ${HADOOP_DISTRO} > ${INSTALL_PREFIX}/${HYPERTABLE_VERSION}/conf/hadoop-distro
+    }
+  else
+    echo "Unrecognized package type - ${ext}"
+    exit 1
+  fi
+}
+
+# FHS-ize the installation.
+# FHS-izes the installations by running bin/ht-fhsize.sh from the
+# \$HYPERTABLE_VERSION (${HYPERTABLE_VERSION}) installation and writes
+# $\HADOOP_DISTRO (${HADOOP_DISTRO}) into the conf/hadoop-distro file
+task: fhsize {
+  ssh: {
+    ${INSTALL_PREFIX}/${HYPERTABLE_VERSION}/bin/ht-fhsize.sh
+    echo ${HADOOP_DISTRO} > ${INSTALL_PREFIX}/${HYPERTABLE_VERSION}/conf/hadoop-distro
+  }
+}
+
+
+# Verify upgrade.
+# Verifies upgrade by running ht-upgrade-ok.sh
+task: verify_upgrade roles: source {
+  ssh: {
+    ${INSTALL_PREFIX}/${HYPERTABLE_VERSION}/bin/ht-upgrade-ok.sh ${INSTALL_PREFIX}/current ${HYPERTABLE_VERSION}
+  }
+}
+
+
+# Upgrade installation.
+# Upgrades installation by copying or re-creating existing symlinks for
+# \"hyperspace\", \"conf\", \"run\", \"log\"  and \"fs\" directories from the
+# current installation to installation specified by \$HYPERTABLE_VERSION
+# (${HYPERTABLE_VERSION}). This is accomplished with a call to ht-upgrade.sh
+task: upgrade_installation roles: master, hyperspace, slave, thriftbroker, spare {
+  ssh: {
+    ${INSTALL_PREFIX}/${HYPERTABLE_VERSION}/bin/ht-upgrade.sh ${INSTALL_PREFIX}/current
+  }
+}
+
+
+# Verify and upgrade installation.
+# Verify upgrade, fhs-izes if needed, and then copies hyperspace and the
+# rangeserver state in the run/ directory to new installation and then sets the
+# \"current\" link by running tasks verify_upgrade, upgrade_installation, and
+# set_current
+task: upgrade {
+  verify_upgrade
+  upgrade_installation
+  set_current
+}
+
+
+RS_DUMP_FILE=/tmp/rsdump.txt
+
+# Dump RangeServer statistics.  Sends \"dump NOKEYS '\$RS_DUMP_FILE'\" to the
+# rangeserver command interpreter which causes the RangeServer to write detailed
+# range and access group statistics to file \$RS_DUMP_FILE (\"$RS_DUMP_FILE\").
+task: rangeserver_dump roles: slave {
+  ssh: {
+    echo "dump NOKEYS '${RS_DUMP_FILE}';" | ${INSTALL_DIR}/bin/ht rangeserver --batch ${CONFIG}
+  }
+}
+
+
+# Start Ganglia gmond.  Starts the Ganglia gmond process with a call to 
+# sudo /etc/init.d/gmond start
+task: start_gmond {
+  ssh: {
+    sudo /etc/init.d/gmond start
+  }
+}
+
+
+# Stop Ganglia gmond.  Stops the Ganglia gmond process with a call to 
+# sudo /etc/init.d/gmond stop
+task: stop_gmond {
+  ssh: {
+    sudo /etc/init.d/gmond stop
+  }
+}
+
+
+# Start Ganglia gmetad.  Starts the Ganglia gmetad process with a call to 
+# sudo /etc/init.d/gmetad start
+task: start_gmetad roles: master {
+  ssh: {
+    sudo /etc/init.d/gmetad start
+  }
+}
+
+
+# Stop Ganglia gmetad.  Stops the Ganglia gmetad process with a call to 
+# sudo /etc/init.d/gmetad stop
+task: stop_gmetad roles: master {
+  ssh: {
+    sudo /etc/init.d/gmetad stop
+  }
+}
+
+
+# Start Ganglia.  Starts Ganglia by calling start_gmond and then start_gmetad
+task: start_ganglia {
+  start_gmond
+  start_gmetad
+}
+
+
+# Stop Ganglia.  Stops Ganglia by calling stop_gmetad and then stop_gmond
+task: stop_ganglia {
+  stop_gmetad
+  stop_gmond
+}
+
+
+# Restart Ganglia.  Restarts Ganglia by calling stop_ganglia followed by start_ganglia
+task: restart_ganglia {
+  stop_ganglia
+  start_ganglia
+}

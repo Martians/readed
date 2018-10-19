@@ -1,0 +1,125 @@
+/* -*- c++ -*-
+ * Copyright (C) 2007-2015 Hypertable, Inc.
+ *
+ * This file is part of Hypertable.
+ *
+ * Hypertable is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; version 3 of the
+ * License, or any later version.
+ *
+ * Hypertable is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301, USA.
+ */
+
+#ifndef Hypertable_Master_OperationRecover_h
+#define Hypertable_Master_OperationRecover_h
+
+#include "Operation.h"
+#include "RangeServerConnection.h"
+
+#include <Hypertable/RangeServer/MetaLogEntityRange.h>
+
+#include <Hypertable/Lib/QualifiedRangeSpec.h>
+
+#include <Common/PageArenaAllocator.h>
+
+#include <vector>
+
+namespace Hypertable {
+
+  /** @addtogroup Master
+   *  @{
+   */
+
+  /** Carries out recovery operaton for a range server.
+   */
+  class OperationRecover : public Operation {
+  public:
+
+    enum {
+      RESTART = 1
+    };
+
+    /** Constructor.
+     * This method constructs a new OperationRecover object.  If #RESTART is
+     * passed in for the <code>flags</code> argument then it will prevent
+     * notifiction if unable to acquire lock on range server's lock file.
+     * This is expected behavior on service restart, so no notification
+     * should be deliverd.
+     * @param context Master context object
+     * @param rsc RangeServerConnection object referring to server to be
+     * recovered
+     * @param flags Set to #RESTART if this object is being created due to a
+     * server restart
+     */
+    OperationRecover(ContextPtr &context, RangeServerConnectionPtr &rsc,
+                     int flags=0);
+
+    OperationRecover(ContextPtr &context, const MetaLog::EntityHeader &header_);
+
+    virtual ~OperationRecover();
+
+    void execute() override;
+    const String name() override;
+    const String label() override;
+    const String& location() const { return m_location; }
+
+    void display_state(std::ostream &os) override;
+    uint8_t encoding_version_state() const override;
+    size_t encoded_length_state() const override;
+    void encode_state(uint8_t **bufp) const override;
+    void decode_state(uint8_t version, const uint8_t **bufp, size_t *remainp) override;
+    void decode_state_old(uint8_t version, const uint8_t **bufp, size_t *remainp) override;
+    bool exclusive() override { return true; }
+
+  private:
+
+    // acquire lock on Hyperspace file; returns true if lock is acquired or
+    // false if the RangeServer is back online
+    bool acquire_server_lock();
+
+    // creates a new recovery plan and stores it in the BalancePlanAuthority
+    void create_recovery_plan();
+
+    // read rsml files and populate m_root_range, m_metadata_ranges etc
+    void read_rsml(std::vector<MetaLog::EntityPtr> &removable_move_ops);
+
+    // check to see if master was notified of newly split-off range
+    void handle_split_shrunk(MetaLogEntityRange *range_entity,
+                             std::vector<MetaLog::EntityPtr> &removable_move_ops);
+
+    // cleans up after this operation is complete
+    void clear_server_state();
+
+    // persisted state
+    String m_location;
+    vector<QualifiedRangeSpec> m_root_specs;
+    vector<RangeState> m_root_states;
+    vector<QualifiedRangeSpec> m_metadata_specs;
+    vector<RangeState> m_metadata_states;
+    vector<QualifiedRangeSpec> m_system_specs;
+    vector<RangeState> m_system_states;
+    vector<QualifiedRangeSpec> m_user_specs;
+    vector<RangeState> m_user_states;
+    // in mem state
+    CharArena m_arena;
+    RangeServerConnectionPtr m_rsc;
+    String m_hostname;
+    uint64_t m_hyperspace_handle {};
+    bool m_restart {};
+    bool m_lock_acquired {};
+  };
+
+  /** @}*/
+
+} // namespace Hypertable
+
+#endif // Hypertable_Master_OperationRecover_h

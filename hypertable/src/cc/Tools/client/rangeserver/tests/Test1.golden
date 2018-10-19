@@ -1,0 +1,858 @@
+UPDATE 'test/Test1' "Test1-data.txt";
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+success
+pause 1;
+CREATE SCANNER ON 'test/Test1'[..??] LIMIT 500;
+1181153478099511 A apple:http://www.lib.utexas.edu/
+1181153478459079 Aaronitic onion:http://prola.aps.org/abstract/PRI/v13/i5/p307_1
+1181153477981316 Ababdeh onion:http://www.haberlah.com
+1181153478514763 Abama yam:http://www.eburg.com/~ghlawson/GeneHLawsonCollection.html
+1181153478338330 Abanic broccoli:http://maps.google.com/maps?ll=39.196952,-94.572108&spn=0.11,0.18
+1181153477622010 Abaris plum:http://www.lettre-ulysses-award.org/
+1181153477869104 Abassin apple:http://www.rbstfacts.org
+1181153478594268 Abassin plum:http://maps.yahoo.com/maps_result?lat=39.903451&lon=-84.488175&mag=4
+1181153477802978 Abba plum:http://www.winick.com/Properties/Richmond/STATEN%20ISLAND%20MALL.pdf
+1181153477869202 Abbadide plum:http://www.newleftreview.net/NLR26001.shtml
+1181153478057135 Abderite cherry:http://www.szpilman.net/
+1181153478496269 Abdiel apple:http://r0.unctad.org/en/pressref/stdissue.htm
+1181153477717046 Abe cassis:http://maps.google.com/maps?ll=33.061018,-96.313227&spn=0.11,0.18
+1181153477952928 Abel broccoli:http://www.hickoksports.com/biograph/drabekdo.shtml
+1181153478301851 Abelite cassis:http://www.mauryshow.com/
+1181153478243776 Abelite plum:http://www.haaretz.com/hasen/spages/491750.html
+1181153478510116 Abelmoschus plum:http://framehosting.dowjonesnews.com/sample/samplestory.asp?StoryID=2004012400040000&Take=1
+1181153478326486 Abhorson apple:http://maps.google.com/maps?ll=34.171631,-86.319967&spn=0.11,0.18&t=h
+1181153478609546 Abie banana:http://terraserver-usa.com/image.aspx?s=14&lon=-97.202762&lat=41.072375&w=2
+1181153477635693 Abies broccoli:http://www.diggiloo.net/?1975be
+1181153477643410 Abietineae apple:http://www.iflibrary.com
+1181153477924933 Abipon banana:http://creativecommons.org/licenses/by-sa/1.0/
+1181153477795230 Abnaki cherry:http://waynesword.palomar.edu/ecoph4.htm
+1181153477612467 Abner yam:http://www.ensemblestudios.com/images/teamphotos/cherry.jpg
+1181153478156568 Abongo cassis:http://gs.wustl.edu/archives/gn/gn125.pdf
+1181153478458762 Abrahamic onion:http://photos.ltmcollection.org/images/max/76/9884276.jpg
+1181153478602058 Abrahamite onion:http://www.songwritershalloffame.org/exhibit_home_page.asp?exhibitId=91
+1181153478366212 Abrahamitic broccoli:http://www.eufou.se
+1181153478417408 Abram banana:http://topozone.com/map.asp?lat=45.672393&lon=-121.87354&s=200&size=m&layer=DRG100&datum=nad83
+1181153478504296 Abramis yam:http://topozone.com/map.asp?lat=36.499508&lon=-86.878717&s=200&size=m&layer=DRG100&datum=nad83
+1181153477887403 Abrus yam:http://terraserver-usa.com/image.aspx?s=14&lon=-84.476022&lat=40.740456&w=2
+1181153477608344 Absyrtus banana:http://maps.google.com/maps?ll=35.788218,-87.45589&spn=0.11,0.18
+1181153477662328 Absyrtus broccoli:http://maps.google.com/maps?ll=33.558724,-82.793784&spn=0.11,0.18
+1181153478541173 Acacia cherry:http://maps.yahoo.com/maps_result?lat=42.326694&lon=-75.314863&mag=4
+1181153477955215 Academic broccoli:http://www.seminolecountyfl.gov
+1181153477570933 Acadia onion:http://de.wikipedia.com/wiki.cgi?Deutsche_Mark
+1181153478426705 Acadia cassis:http://www.rosario.gov.ar
+1181153477807501 Acalepha broccoli:http://www.stmariecathedral.org
+1181153478453119 Acalypha apple:http://www.csu.de/home/Display/Fremdsprachen/englisch
+1181153478399483 Acalypha plum:http://www.royalacademy.org.uk/
+1181153478483682 Acalypterae onion:http://topozone.com/map.asp?lat=38.595802&lon=-83.319725&s=200&size=m&layer=DRG100&datum=nad83
+1181153478264973 Acalyptratae cassis:http://maps.google.com/maps?ll=42.204544,-91.525013&spn=0.11,0.18
+1181153478445528 Acanthaceae cherry:http://www.koloseum-stunts.org/
+1181153478287361 Acantharia onion:http://www.xisu.edu.cn
+1181153477778510 Acanthocereus banana:http://www.businessweek.com/1997/41/b3548002.htm
+1181153478276720 Acanthodea broccoli:http://www.realcajunrecipes.com/recipes/532.rcr
+1181153478057153 Acanthodidae banana:http://www.musicmavericks.org/features/interview_amirkhanian.html
+1181153478437667 Acanthodini banana:http://terraserver-usa.com/image.aspx?s=14&lon=-82.539882&lat=35.537884&w=2
+1181153477952624 Acanthodini cherry:http://www.encyclopedia-titanica.org/biography.php?id=1349
+1181153477612241 Acantholimon banana:http://www.stadiumforbelfast.com
+1181153478077669 Acanthomeridae broccoli:http://maps.yahoo.com/maps_result?lat=42.093058&lon=-91.870272&mag=4
+1181153477538837 Acanthopanax cassis:http://creativecommons.org/licenses/by/2.0/
+1181153478229506 Acanthopteri cassis:http://maps.google.com/maps?ll=46.248412,-114.159852&spn=0.11,0.18&t=h
+1181153477630133 Acanthopterygii yam:http://www2.univ-reunion.fr/~ageof/text/74c21e88-271.html
+1181153478358225 Acanthuridae broccoli:http://maps.google.com/maps?ll=40.250252,-75.588933&spn=0.11,0.18&t=h
+1181153477644475 Acarapis apple:http://math.nsc.ru/LBRT/u2/nauka/kant.html
+1181153478610459 Acarida onion:http://maps.google.com/maps?ll=45.670308,-118.798118&spn=0.11,0.18&t=h
+1181153478091731 Acarida cassis:http://intyoga.online.fr/index.htm
+1181153478173506 Acarina plum:http://www.phrozensmoke.com/projects/icewmcp/
+1181153477965893 Acarus cassis:http://www.cleveland.navy.mil/
+1181153477690010 Acarus broccoli:http://www.ca9.uscourts.gov/
+1181153478218202 Accipiter onion:http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=3063
+1181153478324273 Accipiter cherry:http://www.kcckp.net/en/periodic/todaykorea/index.php?contents+1803+2006-01+80+36
+1181153478595204 Accipitres yam:http://www.fldoe.org/schoolmap/flash/schoolreport.asp?id=67
+1181153478083524 Aceldama plum:http://maps.yahoo.com/maps_result?lat=37.398063&lon=-88.375113&mag=4
+1181153478462121 Acemetic banana:http://www2.nvnet.org/nvhs/
+1181153478580299 Acerates cassis:http://www.epolitix.com/EN/MPWebsites/Tim+Boswell/
+1181153478138032 Acerbas onion:http://cfa-www.harvard.edu/iau/lists/NumberedMPs.txt
+1181153477732940 Acerbas broccoli:http://www.diggiloo.net/?1976ch
+1181153478518979 Achaean cassis:http://www.townoforwell-ny.us/
+1181153478221556 Achaean cherry:http://terraserver-usa.com/image.aspx?s=14&lon=-90.051727&lat=36.237974&w=2
+1181153478049253 Achaemenid apple:http://terraserver-usa.com/image.aspx?s=14&lon=-97.320716&lat=31.950876&w=2
+1181153478245415 Achaenodon broccoli:http://maps.google.com/maps?ll=34.602067,-120.644109&spn=0.11,0.18&t=h
+1181153478520660 Achagua cherry:http://www.yamasa.org/history/english/index.html
+1181153478045159 Achariaceae broccoli:http://www.ntl.com/locales/gb/en/broadcast/wireless-solutions/index.asp
+1181153477658072 Achariaceous broccoli:http://www.stashtea.com/w-050070.htm
+1181153478011984 Achatinella cherry:http://www.sklar.com/page/article/shadrach
+1181153478584833 Achernar onion:http://terraserver-usa.com/image.aspx?s=14&lon=-97.13963&lat=32.84679&w=2
+1181153478590495 Achillize apple:http://www.usda.gov/oc/photo/01cs0188.htm
+1181153477668096 Achillize onion:http://www.tamu.edu/ccbn/dewitt/batgon.htm
+1181153478608190 Achlamydeae onion:http://www.imdb.com/name/nm0000047/
+1181153477584885 Achlamydeae cherry:http://terraserver-usa.com/image.aspx?s=14&lon=-90.801077&lat=43.092098&w=2
+1181153477847915 Achras apple:http://topozone.com/map.asp?lat=40.703146&lon=-80.28342&s=200&size=m&layer=DRG100&datum=nad83
+1181153478595930 Achromatiaceae broccoli:http://library.lds.org/nxt/gateway.dll/Magazines/Ensign/2000.htm/ensign%20august%202000.htm/a%20history%20of%20the%20latterday%20seventy.htm
+1181153477832355 Achromatium yam:http://www.eagle1067fm.com
+1181153478188572 Achromobacter plum:http://www.americanprecision.org/
+1181153477551256 Achyranthes cherry:http://www.google.com/search?q=Bladbean
+1181153478358202 Acidanthera cherry:http://www.affco.co.nz/
+1181153478179791 Acilius banana:http://topozone.com/map.asp?lat=38.21627&lon=-85.61356&s=200&size=m&layer=DRG100&datum=nad83
+1181153478161650 Acinetina yam:http://maps.google.com/maps?ll=51.9,4.5&spn=0.5,0.5&t=k
+1181153477890185 Acinetina yam:http://theages.superman.ws/users/maggin/starwinds-howl/howl.php
+1181153478076043 Acipenseres cassis:http://www.pressrepublican.com/Archive/2004/03_2004/031920043.htm
+1181153477695851 Acipenseroidei apple:http://njdot.nj.gov/
+1181153478174141 Aclemon onion:http://www.ssadb.qc.ca/en/index.htm
+1181153478105866 Acmaeidae cherry:http://www.01net.com/article/252216.html
+1181153477919548 Acmaeidae plum:http://www.google.com/search?q=Dahabiyeh
+1181153478005356 Acnida cherry:http://topozone.com/map.asp?lat=41.21425&lon=-94.185618&s=200&size=m&layer=DRG100&datum=nad83
+1181153477622847 Acoela cherry:http://terraserver-usa.com/image.aspx?s=14&lon=-97.472429&lat=48.881014&w=2
+1181153478201601 Acoelomata broccoli:http://www.sabs.co.za/
+1181153478144356 Acoelomi onion:http://enjoyment.independent.co.uk/books/features/article340500.ece
+1181153477748976 Acoemetae onion:http://www.homesteadmuseum.org
+1181153477670319 Acoma cassis:http://www.nist.gov/dads/HTML/balancmrgsrt.html
+1181153477739411 Acoma yam:http://maps.yahoo.com/maps_result?lat=34.153489&lon=-89.631077&mag=4
+1181153477854405 Acontias onion:http://www.fordham.edu/halsall/mod/modsbook34.html
+1181153478215832 Acontias cherry:http://maps.google.com/maps?ll=39.519488,-104.765833&spn=0.11,0.18
+1181153478365150 Acorus yam:http://www.theage.com.au/articles/2003/09/16/1063625031302.html?from=storyrhs&oneclick=true
+1181153478294195 Acousticon banana:http://www.imdb.com/name/nm1122431/
+1181153478043284 Acousticon broccoli:http://laws.findlaw.com/us/310/586.html
+1181153477844619 Acraeinae banana:http://www.imdb.com/name/nm1763201/
+1181153478367901 Acrania plum:http://maps.yahoo.com/maps_result?lat=33.943964&lon=-86.061546&mag=4
+1181153477996477 Acrasiaceae apple:http://pin.primate.wisc.edu/factsheets/links/cercopithecus
+1181153477849558 Acredula cherry:http://www.imdb.com/title/tt0395404/awards
+1181153478358809 Acrididae onion:http://www.goldengryphon.com/Stross-Concrete.html
+1181153477921615 Acridium banana:http://www.state.gov/r/pa/ei/pix/b/c11924.htm
+1181153478564807 Acroa onion:http://maps.google.com/maps?ll=40.880447,-85.168369&spn=0.11,0.18
+1181153477996619 Acrocarpi cherry:http://maps.google.com/maps?ll=42.463197,-78.93635&spn=0.11,0.18
+1181153477574903 Acrocomia banana:http://www.cinga.ch/langmaking/DTM/dtm.html
+1181153478590015 Acrodus cherry:http://www.cbrd.co.uk/motorway
+1181153477627110 Acromyodi banana:http://www.johnlabattcentre.com/
+1181153478282346 Acromyodi cherry:http://maps.google.com/maps?ll=35.016181,-81.80424&spn=0.11,0.18&t=h
+1181153478421845 Acronycta banana:http://maps.google.com/maps?ll=36.902285,-98.295015&spn=0.11,0.18
+1181153478540419 Acronycta cassis:http://observer.guardian.co.uk/international/story/0,6903,1020400,00.html
+1181153478244386 Acronycta yam:http://www.eelpie.org/
+1181153477953981 Acronycta broccoli:http://www.amnistiainternacional.org/revista/rev73/articulo12.html
+1181153478609846 Acrosticheae plum:http://www.google.com/search?hl=en&q=Gene+Traxler
+1181153477855537 Acrothoracica yam:http://www.frheritage.org.uk./cgi-bin/wiki.pl?Home_Page
+1181153478035039 Acrotretidae banana:http://www.city.fujisawa.kanagawa.jp/
+1181153478081603 Actiad broccoli:http://www.cnn.com/US/9908/12/kansas.evolution.flap/
+1181153478381630 Actian apple:http://maps.yahoo.com/maps_result?lat=39.315166&lon=-74.524907&mag=4
+1181153478467900 Actian yam:http://www.imdb.com/name/nm0310850/
+1181153478564325 Actiniaria onion:http://www.fiawol.demon.co.uk/biblio/
+1181153477719128 Actiniaria onion:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&va=straight&x=0&y=0
+1181153478169730 Actinidiaceae onion:http://home.netcom.com/~fuffle/dogsleds/
+1181153478107366 Actinidiaceae onion:http://www.revue.ch/en/lists/reports/2003_12_30_dossier_6_03_report.php
+1181153477602662 Actinocrinus yam:http://www.google.com/search?hl=en&q=Giacinto+Fontana
+1181153477575847 Actinomyces broccoli:http://topozone.com/map.asp?lat=31.421841&lon=-85.336434&s=200&size=m&layer=DRG100&datum=nad83
+1181153477965138 Actinomycetaceae cassis:http://www.city.shimotsuma.ibaraki.jp/
+1181153477641251 Actinophrys onion:http://topozone.com/map.asp?lat=47.812957&lon=-112.182857&s=200&size=m&layer=DRG100&datum=nad83
+1181153477712136 Actinopteri broccoli:http://topozone.com/map.asp?lat=37.279992&lon=-84.6571&s=200&size=m&layer=DRG100&datum=nad83
+1181153477742562 Actinopterygii apple:http://www.ieee802.org/
+1181153477938158 Actinosphaerium yam:http://maps.google.com/maps?ll=41.222485,-99.298352&spn=0.11,0.18&t=h
+1181153478126516 Acuan yam:http://www.google.co.uk/search?hl=en&q=Akira+Sakata
+1181153477650654 Acubens banana:http://www.spatial.com/
+1181153478254513 Aculeata onion:http://blackholes.us
+1181153477897360 Ada plum:http://www.virginblue.com.au/
+1181153477803641 Adamastor apple:http://ewsoftware.de/wikipedia/design2.htm
+1181153477966311 Adamical apple:http://www.nywf64.com/
+1181153477895875 Adamically broccoli:http://terraserver-usa.com/image.aspx?s=14&lon=-104.05195&lat=48.869847&w=2
+1181153478079219 Adamitism cherry:http://maps.yahoo.com/maps_result?lat=39.394901&lon=-86.561797&mag=4
+1181153477687766 Adar cassis:http://www.telegraph.co.uk/connected/main.jhtml?xml=/connected/1998/10/29/ecftick29.xml
+1181153477933250 Addisoniana plum:http://catb.org/~esr/jargon/html/C/copious-free-time.html
+1181153477681970 Addu plum:http://www.aoc.nrao.edu/aips/weitek.html
+1181153478214231 Ade cassis:http://terraserver-usa.com/image.aspx?s=14&lon=-86.800392&lat=39.850405&w=2
+1181153477922273 Adelaide yam:http://www.wyeast.net
+1181153478408623 Adelarthra broccoli:http://histrom.literature.at/docs/ddraufsatz.html
+1181153478075444 Adeleidae onion:http://www.rose-hulman.edu/~yerricde/pix/wikipedia-freewld468.png
+1181153478562350 Adelges yam:http://rebelcherokee.labdiva.com/snyder.html
+1181153478337791 Adelina apple:http://science.ksc.nasa.gov/shuttle/missions/sts-86/mission-sts-86.html
+1181153478537367 Adeliza yam:http://www.co.guilford.nc.us
+1181153478342863 Adeodatus apple:http://maps.yahoo.com/maps_result?lat=32.905898&lon=-93.699896&mag=4
+1181153478358301 Adeona cassis:http://maps.google.com/maps?ll=35.222539,-93.160408&spn=0.11,0.18
+1181153477710905 Adessenarian cherry:http://maps.yahoo.com/maps_result?lat=45.614153&lon=-123.110827&mag=4
+1181153477922801 Adessenarian plum:http://www.premiumoutlets.com/lighthouseplace
+1181153478165276 Adhara banana:http://www.multimap.com/map/places.cgi?client=public&lang=&advanced=&quicksearch=RM30PE&scale=25000
+1181153478510752 Adhara plum:http://maps.yahoo.com/maps_result?lat=27.935048&lon=-82.810117&mag=4
+1181153478256601 Adicea broccoli:http://www.fh-reutlingen.de/
+1181153478563086 Adiel apple:http://maps.yahoo.com/maps_result?lat=40.025118&lon=-81.586776&mag=4
+1181153478394713 Adiel onion:http://www.hiarcs.com/
+1181153477646197 Adigranth cassis:http://topozone.com/map.asp?lat=40.7042&lon=-73.468918&s=200&size=m&layer=DRG100&datum=nad83
+1181153477557495 Adigranth cherry:http://www.grh-ev.org/KRENZ/krenz.HTM
+1181153477644399 Adigranth plum:http://www.lib.rpi.edu/dept/library/html/Archives/buildings/1960_map.html
+1181153478028248 Adlumia cherry:http://topozone.com/map.asp?lat=39.5731450&lon=-78.8497437&s=200&size=m&layer=DRG100&datum=nad83
+1181153478478183 Adolph cherry:http://wikimediafoundation.org
+1181153478472799 Adolphus banana:http://terraserver-usa.com/image.aspx?s=14&lon=-89.659504&lat=38.007799&w=2
+1181153477730080 Adonean apple:http://www.robinson-twp.org/
+1181153478281851 Adonia apple:http://www.slbc.lk
+1181153477612076 Adoniad broccoli:http://www.victorianweb.org/authors/swinburne/swinburne9.html#1
+1181153478089383 Adonic apple:http://www.emdx.org/rail/DeuxMontagnes/index.html
+1181153478248183 Adonic onion:http://topozone.com/map.asp?lat=47.271954&lon=-111.702675&s=200&size=m&layer=DRG100&datum=nad83
+1181153478426071 Adramelech onion:http://www.bedlamsociety.com/video.asp?videoId=32
+1181153478535726 Advaita onion:http://www.poemhunter.com/i/ebooks/pdf/joseph_brodsky_2004_9.pdf
+1181153477706266 Aechmophorus cherry:http://www.alevelphilosophy.co.uk/freehandouts/Phenomenalism.pdf
+1181153478013132 Aecidiaceae apple:http://www.screenonline.org.uk/people/id/461962/
+1181153478548539 Aedes yam:http://www.cas.org/EO/regsys.html
+1181153477922537 Aegeriidae onion:http://www.sciencemag.org/cgi/reprint/301/5638/1299c.pdf
+1181153477850322 Aegialitis banana:http://www.billboard.com/bbcom/retrieve_chart_history.do?model.chartFormatGroupName=Albums&model.vnuArtistId=315927&model.vnuAlbumId=327241
+1181153477725203 Aegialitis banana:http://www.ceuta.es/informacion/banderayescudo.htm
+1181153478069525 Aeginetan banana:http://www.mimas.ac.uk/~zzalsaw2/pictish.html
+1181153477710125 Aegopodium onion:http://slaght.htmlplanet.com/apac.htm
+1181153478141523 Aegopodium plum:http://www.m-w.com/
+1181153478441418 Aeolian plum:http://maps.google.com/maps?ll=47.007768,-122.911074&spn=0.11,0.18
+1181153478253263 Aeolic apple:http://www.city.imabari.ehime.jp/
+1181153478001153 Aeolicism plum:http://plato.stanford.edu/entries/leucippus/
+1181153478474717 Aeolidae plum:http://www.globaldarkness.com/articles/ericb%20and%20rakim.htm
+1181153478168690 Aeolididae broccoli:http://www.ciao.fr/opinion_view.php/OpinionId/205268/SortOrder/4/sortedReverse/0
+1181153477924797 Aeolism yam:http://maps.yahoo.com/maps_result?lat=31.103664&lon=-85.694544&mag=4
+1181153477700243 Aeolist cherry:http://www.pc-911.com/product_images/cd_caddy.jpg
+1181153477865194 Aepyornis cassis:http://www.britannica.com/search?ct=&query=Adina
+1181153477966393 Aepyornithidae apple:http://www.dcs.hull.ac.uk/cgi-bin/gedidex/n=royal?hungary
+1181153477972515 Aepyornithiformes plum:http://www.almaden.ibm.com/st/chemistry/me/
+1181153478134418 Aequi apple:http://www.nogalesinternational.com
+1181153477611950 Aequiculi plum:http://www.desertusa.com/mag98/mar/poi/du_3rivers.html
+1181153477580586 Aequipalpia cassis:http://maps.google.com/maps?ll=37.962673,-122.55809&spn=0.11,0.18&t=h
+1181153478309959 Aerides yam:http://maps.yahoo.com/maps_result?lat=41.262792&lon=-89.126476&mag=4
+1181153477781630 Aerope yam:http://maps.yahoo.com/maps_result?lat=40.758643&lon=-83.949488&mag=4
+1181153477598826 Aerosol plum:http://creativecommons.org/licenses/by-sa/2.0/
+1181153478363143 Aesculus cassis:http://www.legalbluebook.com/
+1181153477830699 Aesopic onion:http://www.democracynow.org/article.pl?sid=05/11/28/1455257
+1181153477563508 Aethusa yam:http://maps.google.com/maps?ll=45.453227,-121.127244&spn=0.11,0.18
+1181153478302269 Aetomorphae yam:http://www.dreamtheater.net/
+1181153478173532 Afghan onion:http://topozone.com/map.asp?lat=33.583419&lon=-99.793394&s=200&size=m&layer=DRG100&datum=nad83
+1181153477986087 Afrasia cherry:http://www2.ljworld.com/news/2005/dec/10/corkins_defends_standards_debate_science_definitio/?evolution
+1181153477751445 Afrasian apple:http://www.ac.by/country/music.html
+1181153478060318 Africanization cherry:http://www.prideofmanchester.com/music/MichaelMcGoldrick.htm
+1181153478034501 Africanize cherry:http://www.bartleby.com/cgi-bin/texis/webinator/65search?query=Jacob+Glatstein
+1181153477550878 Afridi plum:http://www.google.co.uk/search?hl=en&q=Adrian+Denss
+1181153477786029 Afrikaans broccoli:http://topozone.com/map.asp?lat=33.360255&lon=-94.253993&s=200&size=m&layer=DRG100&datum=nad83
+1181153478451485 Afrikander apple:http://www.hillnews.com/thehill/export/TheHill/News/Frontpage/102005/news3.html
+1181153478048267 Afrikanderism banana:http://www-nlpir.nist.gov/projects/duc/papers/qa.Roadmap-paper_v2.doc
+1181153477659565 Afrogaea cassis:http://www.nationalregisterofhistoricplaces.com/MA/Plymouth/state.html
+1181153478382223 Afrogaea plum:http://www.bartleby.com/cgi-bin/texis/webinator/65search?query=Used+computers
+1181153478084604 Afrogaean banana:http://www.usigs.org/library/books/me/Portland1865/Portland024.htm
+1181153477569946 Aftonian yam:http://lunarsight.com/freq.htm
+1181153478567559 Aftonian broccoli:http://terraserver-usa.com/image.aspx?s=14&lon=-101.370435&lat=39.785196&w=2
+1181153478284004 Agalenidae apple:http://www.imdb.com/name/nm0000114/
+1181153478603147 Agalenidae cassis:http://www.archives.go.kr/president/
+1181153478297453 Agama apple:http://lwn.net/Articles/24747/
+1181153477858481 Agama apple:http://terraserver-usa.com/image.aspx?s=14&lon=-81.864363&lat=41.01562&w=2
+1181153477970933 Agamae cherry:http://www.quebecpolitique.com/
+1181153478575727 Agamemnon onion:http://www.usmm.org/men_ships.html
+1181153478609060 Agamemnon plum:http://maps.google.com/maps?ll=43.297884,-91.989187&spn=0.11,0.18&t=h
+1181153477562141 Agamidae onion:http://www.dtic.mil/jcs
+1181153478134435 Aganice broccoli:http://geonames.usgs.gov/pls/gnis/web_query.gnis_web_query_form
+1181153478026342 Agao banana:http://www.newscorp.com/
+1181153477854957 Agao onion:http://creativecommons.org/licenses/by-sa/1.0/
+1181153478158634 Agao onion:http://www.newadvent.org/cathen/14146a.htm
+1181153477596685 Agapetidae banana:http://www.archives.gov/federal_register/electoral_college/2004_certificates/ascertainment_georgia_01.html
+1181153477891223 Agaristidae onion:http://www.iranchamber.com/personalities/ashariati/works/expectations_of_muslim_woman.php
+1181153477923164 Agastache onion:http://maps.google.com/maps?ll=25.96542,-80.253858&spn=0.11,0.18&t=h
+1181153478589494 Agastache onion:http://topozone.com/map.asp?lat=35.638036&lon=-118.405381&s=200&size=m&layer=DRG100&datum=nad83
+1181153477743065 Agastreae plum:http://www.diggiloo.net/?1962uk
+1181153478365301 Agatha apple:http://www.town.miki.lg.jp/en/
+1181153477587755 Agathaea broccoli:http://www.publicbookshelf.com/public_html/Boys_Own_Book_of_Outdoor_Sports/lakepike_gc.html
+1181153478280104 Agathosma onion:http://www.ci.philomath.or.us/
+1181153478101952 Agaz yam:http://maps.yahoo.com/maps_result?lat=40.913358&lon=-81.108094&mag=4
+1181153478457857 Ageratum banana:http://www.biblegateway.com/passage/?search=Titus+1.5-9
+1181153477890435 Ageratum cherry:http://www.astronomical.org/constellations/obs.html
+1181153478007007 Aggregata yam:http://maps.google.com/maps?ll=33.937401,-84.368625&spn=0.11,0.18&t=h
+1181153478215154 Aggregatae banana:http://www.franklincountychamberofcommerce.org
+1181153478071540 Aghan plum:http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=12260&ICS1=13&ICS2=60&ICS3=50
+1181153477554374 Aghorapanthi apple:http://shaolin.com/stance_horse.aspx
+1181153478206745 Agiel onion:http://www.australiantelevision.net/wr/profiles/bisley.html
+1181153477903035 Aglaonema yam:http://www.wsws.org/articles/2003/aug2003/iraq-a20_prn.shtml
+1181153478515051 Aglipayan onion:http://saturn.jpl.nasa.gov/news/press-kits/cassini-arrival.pdf
+1181153478089041 Aglossa apple:http://www.chesterton.org
+1181153478405024 Aglypha apple:http://maps.google.com/maps?ll=39.438851,-78.982663&spn=0.11,0.18&t=h
+1181153477626720 Aglypha onion:http://www.google.ca/search?q=%E6%99%AE%E9%80%9F%E5%AE%8C&ie=UTF-8&oe=UTF-8&hl=en&btnG=Google+Search&meta=
+1181153478215129 Agonista cassis:http://www.rollingstone.com/reviews/album/_/id/226000/blur?pageid=rs.ArtistDiscography&pageregion=triple1
+1181153477842109 Agrapha onion:http://www.cancer.org/docroot/SPC/content/SPC_1_Tanning_the_Sunless_Way.asp/
+1181153477975987 Agrapha cassis:http://www.fechy.ch
+1181153477549526 Agrauleum apple:http://www.schiedamsemolens.nl/schiedamsemolens/
+1181153478381429 Agrilus cassis:http://www1.dorsetcc.gov.uk/LIVING/FACTS/Census2001.nsf/6cadf4da179fc19500256663004afece/1f3a12dba044faa680256ec5004eec98?OpenDocument
+1181153478310808 Agrilus plum:http://www.town.asahi.yamagata.jp/
+1181153477612813 Agriotes onion:http://cgsc.leavenworth.army.mil/carl/resources/csi/House/House.asp
+1181153478596543 Agriotes onion:http://maps.google.com/maps?ll=32.19776,-83.179271&spn=0.11,0.18
+1181153478188674 Aguacateca plum:http://www.mingalaronline.com/websites/Burmese_Kindoms.htm
+1181153478570416 Ahir apple:http://terraserver-usa.com/image.aspx?s=14&lon=-96.218727&lat=34.533662&w=2
+1181153478465571 Ahousaht cassis:http://www.northvegr.org/vigfusson/index002.php
+1181153478082964 Ahriman onion:http://www.freedomparty.org/consent/cons9709.htm
+1181153478376979 Ahrimanian broccoli:http://www.britannica.com/eb/article?eu=70501&tocid=0&query=soong&ct=
+1181153478014306 Aht apple:http://www.worldstuntawards.com/
+1181153477696938 Aht broccoli:http://worldstatesmen.org/Russia.htm
+1181153478085866 Aidenn cassis:http://www.townhall.com/opinion/columns/robertnovak/2003/02/20/169326.html
+1181153478248678 Ailuropus banana:http://www.livedepartureboards.co.uk/ldb/summary.aspx?T=KGP
+1181153478588376 Ailurus apple:http://www.cnn.com/2006/SHOWBIZ/Movies/01/24/chris.penn.obit.ap/index.html
+1181153478350839 Ailurus plum:http://www.skepdic.com/dogon.html
+1181153478077166 Aimore cherry:http://www.idgr.de/texte/legenden/ehrenburg/ehrenb-ifz.php
+1181153478500654 Ainu apple:http://www.tv.com/search.php?type=11&stype=all&qs=Swans+Crossing&x=0&y=0
+1181153478508979 Airedale onion:http://www.town.vulcan.ab.ca/
+1181153478199205 Aissor banana:http://maps.google.com/maps?ll=41.511288,-78.236418&spn=0.11,0.18&t=h
+1181153477666987 Aitkenite plum:http://maps.yahoo.com/maps_result?lat=42.152039&lon=-89.740211&mag=4
+1181153478251389 Aitutakian yam:http://maps.yahoo.com/maps_result?lat=35.869569&lon=-106.009854&mag=4
+1181153478403969 Aitutakian plum:http://archive.gamespy.com/articles/june03/dumbestmoments/readers/index3.shtml
+1181153477911516 Ajaja apple:http://www.google.com/search?q=Batten+Door
+1181153478409675 Ajatasatru apple:http://groups.google.co.uk/groups?q=%22exodus%20international%22&hl=en&lr=&client=firefox-a&rls=org.mozilla:en-US:official&sa=N&tab=wg
+1181153478218111 Akan apple:http://www.colchester.k12.vt.us/
+1181153477961461 Akan banana:http://www.governet.net/NV/CO/ESM/home.cfm
+1181153478439924 Akawai apple:http://www.accc.gov.au/content/index.phtml/itemId/322986
+1181153477565089 Akha apple:http://maps.google.com/maps?ll=39.348587,-97.453211&spn=0.11,0.18
+1181153478553335 Akhlame onion:http://www.jsc.nasa.gov/policies.html#Guidelines
+1181153478541459 Akim yam:http://planetmath.org/encyclopedia/ContactManifold.html
+1181153477880254 Akkad yam:http://www.britannica.com/search?query=Agilawood
+1181153477948694 Akkadian yam:http://www.google.com/search?q=site:http:%2F%2Fwww.pcmag.com%2Fencyclopedia_term%2F+MSW+Ruler
+1181153477980480 Akkadian broccoli:http://news.bbc.co.uk/1/hi/sport/football/265903.stm
+1181153478500662 Akkadist cherry:http://www.travel-guide.com/region/atoz.asp
+1181153477872279 Akoulalion onion:http://www.shilohshepherds.info/siteMapTheRegistry.htm
+1181153477769075 Akra plum:http://www.missing-episodes.com
+1181153477799153 Akrabattine broccoli:http://www.powell-pressburger.org
+1181153478580925 Aktivist cherry:http://www.leasidebowls.ca/
+1181153478187103 Al banana:http://www.multimap.com/p/browse.cgi?scale=10000&lat=52.08&lon=4.38&icon=x
+1181153477580230 Aladfar onion:http://searchenginewatch.com/searchday/03/sd0210-wikipedia.html
+1181153477611724 Aladfar yam:http://www.dmtc.com/
+1181153478288427 Alaki plum:http://terraserver-usa.com/image.aspx?s=14&lon=-122.972381&lat=44.928842&w=2
+1181153477703898 Alaki broccoli:http://www.shades-of-night.com/aviary/sounds/crow2.wav
+1181153478522934 Alamanni apple:http://topozone.com/map.asp?lat=38.26207&lon=-96.169322&s=200&size=m&layer=DRG100&datum=nad83
+1181153478078094 Alamannic yam:http://www.uj.edu.pl/index.en.html
+1181153477895787 Alan plum:http://maps.yahoo.com/maps_result?lat=29.765527&lon=-95.240332&mag=4
+1181153477751103 Alans cassis:http://terraserver-usa.com/image.aspx?s=14&lon=-98.348159&lat=44.493196&w=2
+1181153477689424 Alarbus broccoli:http://www.washingtonpost.com/ac2/wp-dyn/A41286-2004Dec6?language=printer
+1181153478253056 Alaric yam:http://terraserver-usa.com/image.aspx?s=14&lon=-82.038499&lat=28.85861&w=2
+1181153477935646 Alarodian cassis:http://arxiv.org
+1181153477658654 Alaska plum:http://wikimediafoundation.org
+1181153478337393 Alaskan plum:http://creativecommons.org/licenses/by-sa/1.0/
+1181153477643401 Alauda onion:http://www.klov.com/game_detail.php?game_id=9437
+1181153478203452 Alaudidae onion:http://nationalatlas.gov/printable/images/preview/congdist/fl15_109.gif
+1181153478319378 Albainn apple:http://www.britannica.com/search?ct=&query=Gennett
+1181153477579238 Albainn broccoli:http://www.visitgraham.com/History/timeline.html
+1181153478184817 Albania plum:http://www.as.wvu.edu/history/CollabProject/CollabProject_rudnicki.htm
+1181153478495708 Albany plum:http://www.channel4.com/entertainment/tv/microsites/G/greatest/albums/results.html
+1181153478032464 Albian plum:http://terraserver-usa.com/image.aspx?s=14&lon=-98.071423&lat=46.36523&w=2
+1181153478527212 Albigensianism plum:http://news.bbc.co.uk/2/hi/business/4035787.stm
+1181153477546522 Albion plum:http://www.sos.state.or.us/elections/may2097/other.info/m50abst.htm
+1181153478501587 Albireo cassis:http://www.webhostcorp.com/members/gtsereteli
+1181153478344281 Albuginaceae cassis:http://chat.channel4.com/pastchats/pastchat59.html
+1181153477617369 Alcaligenes onion:http://maps.google.com/maps?ll=33.520706,-86.936858&spn=0.11,0.18
+1181153477600681 Alcantara apple:http://www.multimap.com/map/browse.cgi?client=public&db=pc&addr1=&client=public&addr2=&advanced=&addr3=&pc=SE187EA&cidr_client=none
+1181153478250203 Alcedinidae cherry:http://www.computer-books.us/applescript.php
+1181153478099600 Alchemilla apple:http://www.mrc-cbu.cam.ac.uk/contact/contact-history.shtml
+1181153477791593 Alcippe onion:http://www.schwarzkopf-schwarzkopf.de
+1181153478065971 Alcoranist broccoli:http://www.infoworld.com/article/03/08/19/HNscocode_1.html
+1181153478574617 Alcyonaria cherry:http://www.seeplymouth.com/
+1181153478573917 Alcyonaria cherry:http://www.uefa.com/competitions/UCL/FixturesResults/Round=2199/Match=81467/index.html
+1181153477567859 Alcyones broccoli:http://www.xorn.com/
+1181153477706284 Alcyoniaceae cassis:http://www.hockeydb.com/ihdb/stats/leagues/seasons/teams/0027291985.html
+1181153478258472 Alderamin broccoli:http://en.wikisource.org/wiki/Author:Uwe_Kils/polar/part1
+1181153478034105 Aldine onion:http://map.gsfc.nasa.gov/m_uni.html
+1181153478004361 Alebion apple:http://www.vintageip.com/records/VIP-CL-1002Trk8.mp3
+1181153477680263 Alectoria apple:http://searchenginewatch.com/searchday/article.php/3526351
+1181153478551384 Alectryon broccoli:http://www.statistik.admin.ch/stat_ch/ber00/ekan_ne.htm
+1181153477565587 Alemannish banana:http://www.ethnologue.com
+1181153477613852 Alemite plum:http://www.pbase.com/csdesign/image/33794095
+1181153478290582 Aleppine broccoli:http://www.multimap.com/map/places.cgi?client=public&lang=&advanced=&quicksearch=OX63PD&scale=25000
+1181153478022584 Alethea cherry:http://www.gccbsa.org
+1181153478056411 Aleurites banana:http://www.babygramps.com
+1181153477643710 Aleutian apple:http://kohl.wikimedia.org/~kate/cgi-bin/count_edits.cgi?user=Christiaan&dbname=enwiki
+1181153477585319 Aleutian banana:http://www.blender3d.org/
+1181153477696280 Aleutian onion:http://www.tunney.org/heeney/
+1181153478269073 Aleutic cassis:http://www.vinasdechile.cl/
+1181153477701103 Aleutic yam:http://www.city.yanagawa.fukuoka.jp/
+1181153478210937 Alexandreid onion:http://www.hyoho.com/Hagakure1.html
+1181153478201808 Alexandrina apple:http://terraserver-usa.com/image.aspx?s=14&lon=-120.644109&lat=34.602067&w=2
+1181153477935812 Alexandrina broccoli:http://www.vimmerby.se/
+1181153478044788 Alexian apple:http://geography.about.com/library/weekly/aa030201a.htm
+1181153477733195 Alexis broccoli:http://www.indegayforum.org/authors/vincent/
+1181153478513559 Aleyrodes apple:http://terraserver-usa.com/image.aspx?s=14&lon=-120.847721&lat=38.479339&w=2
+1181153477540201 Aleyrodes banana:http://www.history.navy.mil/photos/pers-us/uspers-k/ej-kng.htm
+1181153478482532 Aleyrodes onion:http://search.barnesandnoble.com/bookSearch/isbnInquiry.asp?isbn=0962303208
+1181153478325643 Alf broccoli:http://topozone.com/map.asp?lat=31.358154&lon=-86.470193&s=200&size=m&layer=DRG100&datum=nad83
+1181153478098062 Alfirk banana:http://terraserver-usa.com/image.aspx?s=14&lon=-90.074227&lat=44.022284&w=2
+1181153478192125 Alfreda onion:http://maps.google.com/maps?ll=41.655805,-76.850706&spn=0.11,0.18
+1181153478173799 Alfurese plum:http://cdsads.u-strasbg.fr/cgi-bin/bib_query?1989AJ.....97.1211V
+1181153477769117 Alfuro yam:http://www.crockford.com/wrrrld/diplomacy.html
+1181153477982507 Alfuro broccoli:http://www.geocities.com/legionviiiaugusta/LegioVIII.html
+1181153477746995 Algarsife banana:http://maps.google.com/maps?ll=32.394965,-83.15361&spn=0.11,0.18&t=h
+1181153478178298 Algarsife onion:http://terraserver-usa.com/image.aspx?s=14&lon=-77.069349&lat=38.979713&w=2
+1181153478358916 Algarsife broccoli:http://maps.yahoo.com/maps_result?lat=40.626509&lon=-76.123342&mag=4
+1181153478081929 Algedi broccoli:http://www.soic.se/
+1181153477971479 Algerian cherry:http://www.mobygames.com/game_group/sheet/gameGroupId,16/
+1181153478362693 Algerine cassis:http://www.cecleeds.co.uk
+1181153477819702 Algic broccoli:http://www.lib.utexas.edu/
+1181153477943339 Algieba plum:http://patterns.projects.cis.ksu.edu/
+1181153477961255 Algol cassis:http://www.wipo.int/treaties/en/ip/paris/trtdocs_wo020.html#P155_22332
+1181153477911056 Alhagi cassis:http://www.niaf.org/news/index.asp?id=418
+1181153478605642 Alicant banana:http://www.thenation.com/doc.mhtml%3Fi=20041206&s=baker
+1181153477987757 Alick yam:http://maps.yahoo.com/maps_result?lat=36.710722&lon=-107.982668&mag=4
+1181153477698068 Alida apple:http://oregonstate.edu/instruct/phl302/texts/descartes/meditations/Meditation6.html
+1181153477616321 Alida banana:http://www.atour.com/State_of_Assyria.html
+1181153477657367 Aline onion:http://www.analyticaconsultores.cl/frameset/documentacion1.htm
+1181153477965802 Aline plum:http://www.lib.utexas.edu/photodraw/portraits/index.html
+1181153478372339 Alioth apple:http://www.mscomm.com/~ulysses/page160.html
+1181153477655513 Alioth cherry:http://www.rosenbergtourism.com/
+1181153478258834 Alismales plum:http://etext.library.adelaide.edu.au/d/darwin/charles/beagle/chapter19.html
+1181153478185472 Alismataceae broccoli:http://maps.google.com/maps?ll=32.882243,-81.659512&spn=0.11,0.18
+1181153478253827 Alix onion:http://www.guardian.co.uk/leaders/story/0,,1598976,00.html
+1181153477606844 Alkanna apple:http://www.spidermurphygang.de/
+1181153478174559 Alkanna banana:http://www.geocities.com/Athens/Academy/1974/main.html
+1181153477905669 Alkanna cassis:http://topozone.com/map.asp?lat=40.842602&lon=-73.043745&s=200&size=m&layer=DRG100&datum=nad83
+1181153478296130 Alkes cassis:http://maps.google.com/maps?ll=42.659864,-94.898808&spn=0.11,0.18&t=h
+1181153478297236 Allah cherry:http://terraserver-usa.com/image.aspx?s=14&lon=-87.651895&lat=41.610934&w=2
+1181153478467057 Allamanda banana:http://www.imdb.com/name/nm0000737/
+1181153477887890 Allamanda yam:http://terraserver-usa.com/image.aspx?s=14&lon=-89.407058&lat=35.839253&w=2
+1181153478123691 Allasch broccoli:http://www.rsf.org/article.php3?id_article=15331
+1181153477578067 Allegheny cassis:http://topozone.com/map.asp?lat=38.913684&lon=-80.749976&s=200&size=m&layer=DRG100&datum=nad83
+1181153478273699 Allentiac plum:http://alex.polvi.net/2005/10/30/wikipedia-in-the-classroom/
+1181153478235693 Allentiacan cherry:http://terraserver-usa.com/image.aspx?s=14&lon=-89.028678&lat=34.670671&w=2
+1181153478283742 Allhallowtide cherry:http://www.chargers.com/history/index.cfm
+1181153477610849 Allionia cassis:http://www.imdb.com/title/tt0086312/
+1181153478376359 Allioniaceae onion:http://www.killerplants.com/weird-plants/20020516.asp
+1181153478115504 Allium broccoli:http://www.uboat.net/allies/merchants/types.html?class=Victory
+1181153478593913 Allobroges banana:http://www.indiana.edu/~rcapub/v17n3/p18.html
+1181153477756972 Allotheria yam:http://www.opticalmechanics.com/about_coma.htm
+1181153478152819 Ally banana:http://terraserver-usa.com/image.aspx?s=14&lon=-85.623992&lat=38.300269&w=2
+1181153477954037 Ally banana:http://www.rhventures.org/
+1181153478015772 Alma banana:http://www.oreilly.com/catalog/sshtdg2/
+1181153477764029 Alma banana:http://www.state.gov/r/pa/ei/bgn/4007.htm
+1181153477646662 Alman yam:http://www.mckinley.uiuc.edu/handouts/ingrown_toenail/ingrown_toenail.html
+1181153478058477 Alman broccoli:http://www.terrihawkes.com
+1181153478228734 Almerian cherry:http://www.neworleanschinatown.com/
+1181153478448637 Almira plum:http://mcadams.posc.mu.edu/arnold1.htm
+1181153478044440 Almohad cassis:http://www.linz.govt.nz/rcs/linz/pub/web/root/core/placenames/index.jsp
+1181153478535259 Almoravides cassis:http://www.osbar.org/public/pamphlets/smallclaims.html
+1181153478029363 Alnaschar yam:http://www.allmusic.com/cg/amg.dll?p=amg&uid=UIDSUB020404191908272523&sql=B87dnvwmva9xk
+1181153478435786 Alnilam apple:http://caselaw.lp.findlaw.com/scripts/getcase.pl?navby=CASE&court=US&vol=32&page=243
+1181153478213948 Alnitham yam:http://www.wrockefellerfoundation.org
+1181153477846848 Alnus banana:http://www.yukoninfo.com/whitehorse/
+1181153478522909 Alnus cherry:http://topozone.com/map.asp?lat=42.279715&lon=-94.29152&s=200&size=m&layer=DRG100&datum=nad83
+1181153478460314 Aloadae banana:http://www.gnu.org/software/classpath/
+1181153478116946 Alocasia cherry:http://www.aarclibrary.org/publib/church/reports/book1/contents.htm
+1181153478458191 Alonso banana:http://www.mark-weeks.com/chess/9496fwix.htm
+1181153478019103 Alonsoa yam:http://www.carlton.paschools.pa.sk.ca/chemical/mtom/contents/chapter3/fritzhaber_2.htm
+1181153477892549 Alonzo banana:http://maps.google.com/maps?ll=33.056191,-92.151853&spn=0.11,0.18
+1181153478425138 Alopiidae cassis:http://www-unix.mcs.anl.gov/mpi/mpich/
+1181153478250507 Alosa broccoli:http://www.ottawahort.org/trophies2.htm
+1181153477830014 Alphean onion:http://193.178.1.79/ZZSI432Y1999.html
+1181153477733828 Alphecca yam:http://www.gnu.org/licenses/license-list.html#NonFreeDocumentationLicenses
+1181153477773515 Alphonse cherry:http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=8150834
+1181153477890873 Alphonso cherry:http://www.atomiq.org/archives/000516.html
+1181153477729078 Alpine broccoli:http://www.paraview.com/gorightly/gorightly_excerpt.htm
+1181153477829927 Alpinist apple:http://www.hjnc.org/about_us/dvar-eckhaus.html
+1181153478107870 Alpujarra apple:http://www.livedepartureboards.co.uk/ldb/summary.aspx?T=DSM
+1181153477597086 Alpujarra banana:http://www.inselma.com/
+1181153477772287 Alsatian plum:http://www.baseball-reference.com/p/planked01.shtml
+1181153478103946 Alsophila plum:http://maps.google.com/maps?ll=32.321401,-102.551733&spn=0.11,0.18&t=h
+1181153477853229 Alstroemeria onion:http://members.xoom.com/HUIKALAIAINA
+1181153478589860 Altaian broccoli:http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=6976259
+1181153478518531 Altaic broccoli:http://www.wrdsb.on.ca/school_profiles/profile_BCI.pdf
+1181153477748859 Altair apple:http://pubs.usgs.gov/of/of00-304/htmldocs/chap09/
+1181153477652975 Alternaria banana:http://www.modot.state.mo.us/local/d10/emersonbridge/Emerson-index.html
+1181153477702875 Alternaria broccoli:http://www.die.gov.tr/ENGLISH/SONIST/TASIT/190105/table2.html
+1181153478242918 Althaea apple:http://www.britannica.com/search?ct=&query=Gertrude+Johnson
+1181153477624739 Althaea broccoli:http://maps.google.com/maps?ll=34.027738,-117.860514&spn=0.11,0.18&t=h
+1181153478308789 Altica apple:http://www.unctadxi.org/
+1181153478068813 Alticamelus onion:http://faq.fws.gov/imagefaq.html
+1181153478532322 Aluconidae onion:http://www.umaine.edu/mcsc/AboutUs/Bio.htm
+1181153478351275 Aluconidae plum:http://cubapolidata.com/cafr/cafr_doctrine.html
+1181153477544944 Aluconinae apple:http://www.loc.gov/rr/digiref/source/CDRS-KB-CNI.PPT
+1181153477826352 Alvissmal cherry:http://www.radiojackie.com
+1181153477926318 Alvissmal broccoli:http://www.nytimes.com/2001/10/18/business/media/18MAG.html
+1181153477678140 Alyssum apple:http://maps.yahoo.com/maps_result?lat=37.169026&lon=-94.386404&mag=4
+1181153478296454 Amadis apple:http://www.gt-works.com/yachoo/kissa/colum/australia/img_002/minamigarasu.jpg
+1181153478485483 Amadis onion:http://www.tonyharnell.com/
+1181153478342161 Amaethon banana:http://maps.yahoo.com/maps_result?lat=40.47559&lon=-111.246572&mag=4
+1181153477840952 Amafingo cassis:http://www.methuen.co.uk/iffiles.html
+1181153478552039 Amakosa broccoli:http://www.townofmadawaska.com/
+1181153477971875 Amalfian onion:http://www.markarts.net
+1181153478538614 Amalrician banana:http://terraserver-usa.com/image.aspx?s=14&lon=-85.716235&lat=38.122418&w=2
+1181153478174713 Amampondo broccoli:http://www.fulhamfc.com/displayContent.asp?id=286583&intAreaID=17
+1181153477952616 Amanda apple:http://www.sprachprofi.de.vu/english/bul.htm
+1181153478494478 Amanita onion:http://www.gao.gov/highlights/d0647high.pdf
+1181153478290864 Amapondo cherry:http://www.nutek.se/
+1181153477827523 Amaranthaceae yam:http://www.rhaworth.myby.co.uk/oscoor_a.htm?TQ255805_region:GB_scale:25000
+1181153477830031 Amaranthus banana:http://www.businessweek.com
+1181153477745782 Amarantus plum:http://www.municat.net:8000/omunicat/owa/mun_p01.dad_ens?via=6&cod=8100690004
+1181153477729043 Amazon onion:http://www.newadvent.org/cathen/14221a.htm
+1181153478205456 Amazonian banana:http://Everything2.com
+1181153477717277 Amazonian cherry:http://www.google.com/search?q=Bonita+Allen
+1181153477615882 Amblycephalidae apple:http://www.villageofbonnie.com/
+1181153477651506 Amblyopsidae yam:http://dmoz.org/Science/Math/Software/MATLAB/
+1181153477920111 Amboina onion:http://www.imdb.com/title/tt0118315/
+1181153477997544 Ambrosio banana:http://www.bbc.co.uk/mediaselector/check/comedy/deadringers/ram/deadringers_s3ep3?size=16x9&bgc=006699&nbram=1&bbram=1
+1181153478117190 Ameiva cherry:http://www.worlds-largest-diamonds.com/
+1181153477815703 American plum:http://topozone.com/map.asp?lat=34.565301&lon=-85.616426&s=200&size=m&layer=DRG100&datum=nad83
+1181153478097090 Americanism cherry:http://www.imdb.com/name/nm0646616/
+1181153478258070 Americanitis apple:http://www.usgennet.org/usa/ny/county/columbia/livstn/index_livstn.htm
+1181153478056736 Americanly onion:http://maps.google.com/maps?ll=30.196414,-95.175422&spn=0.11,0.18
+1181153478190522 Americanly plum:http://www.co.jefferson.ny.us
+1181153477684874 Americanoid cassis:http://www.cearbhallodalaigh.ie/home.php
+1181153478222088 Americomania broccoli:http://www.multimap.com/map/browse.cgi?client=public&db=pc&addr1=&client=public&addr2=&advanced=&addr3=&pc=BN37HD&cidr_client=none
+1181153478156769 Amiloun onion:http://www.corknut.org/code/transcript/
+1181153478569596 Amma yam:http://animalscience.ucdavis.edu/Avian/pfs23.htm
+1181153478369200 Ammanite yam:http://www.imdb.com/name/nm0639679/
+1181153478518481 Ammanite broccoli:http://www.amath.washington.edu/~lf/tutorials/autoconf/
+1181153478060897 Ammi yam:http://topozone.com/map.asp?lat=59.468519&lon=-135.305962&s=200&size=m&layer=DRG100&datum=nad83
+1181153477942168 Ammodytes yam:http://maps.google.com/maps?ll=70.32549,-148.711387&spn=0.11,0.18&t=h
+1181153477581508 Ammodytidae onion:http://topozone.com/map.asp?lat=36.316&lon=-91.225112&s=200&size=m&layer=DRG100&datum=nad83
+1181153478564752 Ammodytidae yam:http://maps.yahoo.com/maps_result?lat=41.420993&lon=-79.818883&mag=4
+1181153478301443 Ammonoidea onion:http://www.clas.pdx.edu/
+1181153477565436 Amnionata apple:http://terraserver-usa.com/image.aspx?s=14&lon=-88.169194&lat=42.549485&w=2
+1181153477892767 Amnionata cassis:http://maps.google.com/maps?ll=39.863667,-88.159579&spn=0.11,0.18
+1181153477917564 Amnionata cassis:http://www.stleonards-fife.org/Index.asp?MainID=4382
+1181153478040465 Amoebaea onion:http://www.roudenbush.org
+1181153477544336 Amoebaea plum:http://www.uic.com.au/nip73.htm
+1181153478523452 Amoebida onion:http://c.faculty.umkc.edu/cowande/ccw/carm.htm
+1181153477926695 Amoebobacter apple:http://terraserver-usa.com/image.aspx?s=14&lon=-97.296053&lat=26.103381&w=2
+1181153478400851 Amomales plum:http://www.kscm.cz/index.asp?
+1181153478519627 Amorite onion:http://nerra.host.sk/poloha.htm
+1181153478048767 Amoritic cassis:http://bmworacleracing.com/
+1181153477994235 Amorpha broccoli:http://www.markbrandis.de
+1181153478366812 Amorphophallus broccoli:http://dictionary.reference.com/search?q=doctrinaire
+1181153477619113 Amorua plum:http://blogs.msdn.com/oldnewthing/archive/2003/09/10/54831.aspx
+1181153478231043 Ampelidaceae banana:http://artofthestates.org/cgi-bin/composer.pl?comp=67
+1181153477783992 Ampelidae broccoli:http://terraserver-usa.com/image.aspx?s=14&lon=-115.635053&lat=36.258157&w=2
+1181153478226524 Ampelosicyos yam:http://maps.google.com/maps?ll=38.502736,-90.645075&spn=0.11,0.18
+1181153478149107 Amphicyon cherry:http://www.president.gov.tw/1_roc_intro/e_xpresident/e_d_cha2.html
+1181153477818851 Amphineura apple:http://www.fis-ski.com/uk/604/610.html?sector=CC&raceid=7484
+1181153477703604 Amphineura cassis:http://www.cricinfo.com/db/STATS/TESTS/INDIVIDUAL/TEST_INDIV_MOST_MATCHES.html
+1181153478308589 Amphioxi cherry:http://www.ciencias.uma.es/publicaciones/encuentros/ENCUENTROS64/aves.html
+1181153477786262 Amphioxididae broccoli:http://maps.google.com/maps?ll=40.997604,-92.167752&spn=0.11,0.18&t=h
+1181153477804969 Amphirhina cherry:http://www.census.gov/popest/cities/tables/SUB-EST2004-04-12.xls
+1181153477656588 Amphisbaenidae cherry:http://www.abc.net.au/news/newsitems/200506/s1398449.htm
+1181153478607840 Amphitruo cherry:http://www.marblecliff.org/
+1181153477765696 Amphitryon plum:http://html.newsnet5.com/newschannel5/stationhistory/
+1181153478447447 Amphiuma banana:http://terraserver-usa.com/image.aspx?s=14&lon=-90.356562&lat=31.987973&w=2
+1181153477543614 Amphiuma onion:http://www.apple.com/server/documentation/
+1181153478152194 Amphiumidae cherry:http://terraserver-usa.com/image.aspx?s=14&lon=-74.155096&lat=40.745951&w=2
+1181153477604976 Ampullariidae onion:http://www.britannica.com/eb/article?tocId=12258
+1181153478523915 Amritsar onion:http://www.1id.army.mil/
+1181153478375984 Amsonia plum:http://maps.google.com/maps?ll=48.840666,-99.746588&spn=0.11,0.18
+1181153478311383 Amsonia plum:http://www.redwall.org/dave/bellmakr.html
+1181153477764911 Amueixa onion:http://www.ville-montfort-l-amaury.fr
+1181153477882287 Amusgo apple:http://alces.sel.uaf.edu/gregg/ns/nsmap.html
+1181153477597371 Amusgo yam:http://maps.google.com/maps?ll=48.945231,-98.996864&spn=0.11,0.18&t=h
+1181153477665129 Amyridaceae cherry:http://maps.google.com/maps?ll=47.951113,-100.533608&spn=0.11,0.18
+1181153478425274 Anabaptism banana:http://topozone.com/map.asp?lat=37.468517&lon=-96.263014&s=200&size=m&layer=DRG100&datum=nad83
+1181153478532948 Anabaptist apple:http://ufo2000.sourceforge.net
+1181153477959033 Anabaptistical yam:http://outdoorsculpture.wwu.edu/number20.htm
+1181153478495913 Anabaptistry plum:http://wikisophia.org/
+1181153477987881 Anabaptistry broccoli:http://members.tripod.com/90north/nobilenorthpole.htm
+1181153477905371 Anabas banana:http://www.questia.com/PM.qst?a=o&d=9488659
+1181153477545006 Anablepidae banana:http://www.bloomberg.com/apps/quote?ticker=3103:JP
+1181153477803201 Anableps cherry:http://www.plattegronden.nl/cgi-local/imap.cgi?vlaardingen+vlaa+d+5+a+4+b+4
+1181153478344441 Anableps yam:http://www.af.mil/main/disclaimer.asp
+1181153478042703 Anacanthini apple:http://home.ecn.ab.ca/~jsavard/crypto/co040411.htm
+1181153477877862 Anacardium cherry:http://www.gold-net.com.au/archivemagazines/feb20/78152744.html#13
+1181153477548629 Anacardium cherry:http://www.unipg.it/facvet/
+1181153478446533 Anaclete yam:http://www.sdu.nl/staatscourant/gemeentes/gemprovin.htm#NH
+1181153477548443 Anacreon plum:http://www.bartleby.com/cgi-bin/texis/webinator/65search?query=Angelus+Family
+1181153477665834 Anacreontically broccoli:http://www.og-elsengrund.de.vu
+1181153478243425 Anagallis apple:http://www.upenn.edu/ldi/davis.html
+1181153478025278 Anagyris onion:http://www.opengeodb.de/suche/
+1181153477702563 Anaitis banana:http://maps.google.com/maps?ll=27.750652,-98.07046&spn=0.11,0.18&t=h
+1181153477981938 Anaitis cherry:http://www.charlie-peterson.com
+1181153477545742 Anam plum:http://www.hauptschule-wolverothe.de/
+1181153477769343 Anamite onion:http://terraserver-usa.com/image.aspx?s=14&lon=-93.470067&lat=37.028804&w=2
+1181153477853650 Anamite yam:http://www.google.com/search?q=Astra+A-50
+1181153478530852 Anamite broccoli:http://topozone.com/map.asp?lat=42.124442&lon=-77.035463&s=200&size=m&layer=DRG100&datum=nad83
+1181153477998991 Ananism banana:http://www.wipo.int/article6ter/en/
+1181153477896784 Ananta cassis:http://www.socialistworker.co.uk/1746/sw174609.htm
+1181153478349297 Ananta cherry:http://www.performancepoetry.com
+1181153477709421 Anaphe apple:http://tafftrail.org.uk
+1181153478130060 Anaptomorphus yam:http://www.wellington.vic.gov.au/
+1181153478519723 Anaryan cassis:http://userpages.umbc.edu/~sjoshi1/mirror/corbrep97.shtml
+1181153477778853 Anasa yam:http://www.infinityplus.co.uk/stories/colderwar.htm
+1181153477701519 Anasazi onion:http://www.world-mysteries.com/sar_7.htm#Ancient%20Indian
+1181153478564025 Anaspides banana:http://www.google.com/search?q=Airsource+Pro
+1181153478026734 Anastasia yam:http://maps.yahoo.com/maps_result?lat=35.507791&lon=-94.057883&mag=4
+1181153477900179 Anastasian cherry:http://web.ask.com/web?q=iraq+war&qsrc=0&o=0
+1181153477711891 Anastrophia plum:http://www.google.com/search?q=Bob%20Zmuda
+1181153478098111 Anastrophia broccoli:http://www.google.com/search?q=Black+Beer
+1181153478593218 Anat apple:http://www.horsesonthebeach.com/
+1181153478011471 Anat banana:http://www.churchofscotland.org.uk/boards/pracproc/articlesdeclaratory1.htm
+1181153478445405 Anat cassis:http://maps.google.com/maps?ll=34.73327,-98.483923&spn=0.11,0.18&t=h
+1181153477614231 Anatherum cassis:http://www.franklinvermont.com/
+1181153478599105 Anatherum plum:http://www.365gay.com
+1181153478408578 Anatinacea yam:http://www.rollingstone.com/reviews/album?id=236252
+1181153478237424 Anatum cherry:http://www.whyaretheydead.net/krasel/books/evans/title.html
+1181153478430461 Anax cassis:http://marypierce.8m.com/
+1181153477925903 Anaxagorize plum:http://maps.yahoo.com/maps_result?lat=38.648284&lon=-77.34235&mag=4
+1181153477627299 Ancha onion:http://mondediplo.com/2000/12/12campdavid
+1181153478604085 Ancha broccoli:http://www.britannica.com/search?query=MSW+Inserting+Graphics
+1181153478586828 Anchtherium apple:http://www.britannica.com/search?query=pendent+frieze
+1181153478576589 Ancistrocladus banana:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&va=straight&x=0&y=0
+1181153477914831 Ancistrocladus plum:http://topozone.com/map.asp?lat=43.35944&lon=-72.56611&s=200&size=m&layer=DRG100&datum=nad83
+1181153478069993 Ancyloceras yam:http://topozone.com/map.asp?lat=40.372656&lon=-74.612865&s=200&size=m&layer=DRG100&datum=nad83
+1181153478023264 Ancylodactyla cassis:http://www.pendleforestcyclingclub.co.uk/
+1181153477971866 Ancyrene apple:http://www.bimbel.de/artikel/artikel-22.html
+1181153478099503 Andaman cherry:http://www.revue-chimeres.org/guattari/guattari.html
+1181153477776129 Andamanese yam:http://www.google.co.uk/search?hl=en&q=Aleksandar+Raichev
+1181153477826642 Andaste broccoli:http://maps.google.com/maps?ll=40.047149,-74.049776&spn=0.11,0.18&t=h
+1181153478036817 Andean apple:http://runeberg.org/nfbp/0557.html
+1181153478486791 Andean cherry:http://www.gdansk.pl/article.php?category=453&article=925&history=453
+1181153478033239 Andean broccoli:http://etext.lib.virginia.edu/chinese/HLM/hlmitre2.htm
+1181153478125314 Andevo yam:http://www.google.com/search?q=Bajocco
+1181153478016557 Andira cherry:http://maps.google.com/maps?ll=38.616427,-89.053982&spn=0.11,0.18
+1181153478121194 Andira plum:http://www.news.wisc.edu/titanarum2002/
+1181153477691392 Andoke cherry:http://www.myndigheten.netuniversity.se/
+1181153478481077 Andorobo cherry:http://www.anyware.co.uk/ame/index.html
+1181153477778642 Andorran cherry:http://maps.yahoo.com/maps_result?lat=39.747668&lon=-77.378846&mag=4
+1181153477578832 Andorran yam:http://topozone.com/map.asp?lat=33.759283&lon=-118.082396&s=200&size=m&layer=DRG100&datum=nad83
+1181153478319571 Andreaeales cherry:http://www.wvec.k12.in.us/EastTipp/
+1181153477958097 Andromaque yam:http://www.znojmuz.cz/english/aodivis.htm
+1181153478600631 Andromede cassis:http://www.yosemite.ca.us/history/place_names_of_the_high_sierra/h.html#page_39
+1181153477768780 Andromede cherry:http://www.fas.org/man/dod-101/sys/land/row/asu-85.htm
+1181153477700100 Andronicus cherry:http://www.lighthouse.fsnet.co.uk/events/ilhd05.html
+1181153477540066 Angami plum:http://www.yellowikis.org/wiki/index.php/NTT
+1181153478477933 Angelica onion:http://www.scene.org
+1181153478457537 Angelo apple:http://www.alwaraq.com/
+1181153477925101 Angelonia yam:http://maps.google.com/maps?ll=32.20906,-99.797126&spn=0.11,0.18
+1181153478362006 Angelus onion:http://maps.google.com/maps?ll=39.542569,-110.418934&spn=0.11,0.18&t=h
+1181153478022398 Angerona apple:http://www.gospels.net/translations/infancythomastranslation.html
+1181153477973072 Angerona plum:http://www.epguides.com/ThunderCats/
+1181153478016995 Angetenar broccoli:http://maps.yahoo.com/maps_result?lat=31.33129&lon=-109.56200&mag=4
+1181153477641671 Angevin cassis:http://maps.google.com/maps?ll=39.990592,-83.941676&spn=0.11,0.18
+1181153477785720 Angie banana:http://www.livedepartureboards.co.uk/ldb/summary.aspx?T=SHW
+1181153477813547 Angiospermae banana:http://terraserver-usa.com/image.aspx?s=14&lon=-95.791613&lat=43.311916&w=2
+1181153477770926 Angles onion:http://maps.yahoo.com/maps_result?lat=40.299256&lon=-75.178224&mag=4
+1181153477570570 Anglian yam:http://www.capcom.com/megaman/
+1181153477855791 Anglicism banana:http://www.orientalarchitecture.com/lahore/BADSHAHI21.htm
+1181153478125976 Anglification onion:http://www.bajajauto.com/
+1181153477830947 Anglophobe onion:http://www.tolelenath.com/
+1181153477980237 Anglophobe cassis:http://maps.yahoo.com/maps_result?lat=39.161241&lon=-84.750288&mag=4
+DESTROY SCANNER;
+CREATE SCANNER ON 'test/Test1'[..??] WHERE ROW = "Agamemnon";
+1181153478575727 Agamemnon onion:http://www.usmm.org/men_ships.html
+1181153478609060 Agamemnon plum:http://maps.google.com/maps?ll=43.297884,-91.989187&spn=0.11,0.18&t=h
+DESTROY SCANNER;
+CREATE SCANNER ON 'test/Test1'[..??] WHERE ROW >= "Agamemnon" LIMIT=5;
+1181153478575727 Agamemnon onion:http://www.usmm.org/men_ships.html
+1181153478609060 Agamemnon plum:http://maps.google.com/maps?ll=43.297884,-91.989187&spn=0.11,0.18&t=h
+1181153477562141 Agamidae onion:http://www.dtic.mil/jcs
+1181153478134435 Aganice broccoli:http://geonames.usgs.gov/pls/gnis/web_query.gnis_web_query_form
+1181153478026342 Agao banana:http://www.newscorp.com/
+1181153477854957 Agao onion:http://creativecommons.org/licenses/by-sa/1.0/
+1181153478158634 Agao onion:http://www.newadvent.org/cathen/14146a.htm
+1181153477596685 Agapetidae banana:http://www.archives.gov/federal_register/electoral_college/2004_certificates/ascertainment_georgia_01.html
+DESTROY SCANNER;
+CREATE SCANNER ON 'test/Test1'[..??] WHERE "Agamemnon" <= ROW <= "Agamemnon";
+1181153478575727 Agamemnon onion:http://www.usmm.org/men_ships.html
+1181153478609060 Agamemnon plum:http://maps.google.com/maps?ll=43.297884,-91.989187&spn=0.11,0.18&t=h
+DESTROY SCANNER;
+CREATE SCANNER ON 'test/Test1'[..??] WHERE "Agamemnon" <= ROW <= "Aganice";
+1181153478575727 Agamemnon onion:http://www.usmm.org/men_ships.html
+1181153478609060 Agamemnon plum:http://maps.google.com/maps?ll=43.297884,-91.989187&spn=0.11,0.18&t=h
+1181153477562141 Agamidae onion:http://www.dtic.mil/jcs
+1181153478134435 Aganice broccoli:http://geonames.usgs.gov/pls/gnis/web_query.gnis_web_query_form
+DESTROY SCANNER;
+CREATE SCANNER ON 'test/Test1'[..??] WHERE "Agamemnon" < ROW <= "Aganice";
+1181153477562141 Agamidae onion:http://www.dtic.mil/jcs
+1181153478134435 Aganice broccoli:http://geonames.usgs.gov/pls/gnis/web_query.gnis_web_query_form
+DESTROY SCANNER;
+CREATE SCANNER ON 'test/Test1'[..??] WHERE "Agamemnon" <= ROW < "Aganice";
+1181153478575727 Agamemnon onion:http://www.usmm.org/men_ships.html
+1181153478609060 Agamemnon plum:http://maps.google.com/maps?ll=43.297884,-91.989187&spn=0.11,0.18&t=h
+1181153477562141 Agamidae onion:http://www.dtic.mil/jcs
+DESTROY SCANNER;
+CREATE SCANNER ON 'test/Test1'[..??] WHERE "Agamemnon" < ROW < "Aganice";
+1181153477562141 Agamidae onion:http://www.dtic.mil/jcs
+DESTROY SCANNER;
