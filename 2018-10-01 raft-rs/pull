@@ -1,0 +1,2 @@
+git fetch github
+git merge github/local
